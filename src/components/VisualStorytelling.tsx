@@ -27,7 +27,7 @@ const STORY_SCENES: StoryScene[] = [
     subtitle: 'The Katehranchal Harvest',
     description:
       'A curated collection of pure Desi Ghee, traditional mustard oils, and whole natural grains crafted with rural patience and honest dedication.',
-    imageSrc: '/assets/story/scene-1-collection.svg',
+    imageSrc: './assets/story/scene-1-collection.svg',
     imageAlt: 'Katehranchal Agro Foods complete collection with Desi Ghee, mustard oils, seeds, and wheat',
     actionText: 'Explore Entire Catalog',
     actionRoute: 'shop',
@@ -40,7 +40,7 @@ const STORY_SCENES: StoryScene[] = [
     subtitle: 'Pure Desi Ghee',
     description:
       'A traditional favourite for everyday meals, rotis, dal and family recipes. Clarified gently to preserve its granular texture and rich aroma.',
-    imageSrc: '/assets/story/scene-2-desi-ghee.svg',
+    imageSrc: './assets/story/scene-2-desi-ghee.svg',
     imageAlt: 'Golden Desi Ghee in traditional glass jar with brass spoon',
     actionText: 'View Desi Ghee Options',
     actionRoute: 'shop',
@@ -53,7 +53,7 @@ const STORY_SCENES: StoryScene[] = [
     subtitle: 'Selected Mustard Oils',
     description:
       'Mustard oil selections for traditional cooking, homemade pickles and familiar recipes. Robust in natural character, aroma, and everyday utility.',
-    imageSrc: '/assets/story/scene-3-mustard-oils.svg',
+    imageSrc: './assets/story/scene-3-mustard-oils.svg',
     imageAlt: 'Mustard oil in clean glass bottles with black and yellow mustard seeds',
     actionText: 'Discover Mustard Oils',
     actionRoute: 'shop',
@@ -66,7 +66,7 @@ const STORY_SCENES: StoryScene[] = [
     subtitle: 'Whole Natural Wheat',
     description:
       'Whole wheat for home milling and the everyday comfort of fresh rotis. Final batch handling and quality specifications will be published after verification.',
-    imageSrc: '/assets/story/scene-4-natural-wheat.svg',
+    imageSrc: './assets/story/scene-4-natural-wheat.svg',
     imageAlt: 'Clean whole wheat grains in earthen container with golden wheat stalks',
     actionText: 'View Whole Wheat Grain',
     actionRoute: 'shop',
@@ -79,7 +79,7 @@ const STORY_SCENES: StoryScene[] = [
     subtitle: 'The Agricultural Journey',
     description:
       'Rooted in the agricultural heritage of rural India, Katehranchal Agro Foods is dedicated to bringing honest nutrition to contemporary family kitchens.',
-    imageSrc: '/assets/story/scene-5-brand-story.svg',
+    imageSrc: './assets/story/scene-5-brand-story.svg',
     imageAlt: 'Calm rural Indian agricultural landscape with golden wheat fields, sunrise, and flowing river',
     actionText: 'Read Our Full Story',
     actionRoute: 'our-story',

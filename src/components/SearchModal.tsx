@@ -160,7 +160,7 @@ export const SearchModal: React.FC<SearchModalProps> = ({
                 <div className="py-8 text-center space-y-3">
                   <div className="w-24 h-24 mx-auto rounded-xl overflow-hidden border border-[#124328]/10 bg-[#FAF7F2]">
                     <img
-                      src="/assets/illustrations/empty-cart-earthen-urn.svg"
+                      src="./assets/illustrations/empty-cart-earthen-urn.svg"
                       alt="Traditional earthen vessel"
                       className="w-full h-full object-cover"
                       referrerPolicy="no-referrer"

@@ -43,7 +43,7 @@ export const OurStoryPage: React.FC<OurStoryPageProps> = ({ onNavigate }) => {
 
         <div className="rounded-2xl overflow-hidden shadow-xs border border-[#124328]/15 bg-[#FAF7F2]">
           <img
-            src="/assets/illustrations/hands-cradling-harvest.svg"
+            src="./assets/illustrations/hands-cradling-harvest.svg"
             alt="Reverent hands cradling traditional golden harvest"
             className="w-full h-auto object-cover"
             referrerPolicy="no-referrer"
@@ -85,7 +85,7 @@ export const OurStoryPage: React.FC<OurStoryPageProps> = ({ onNavigate }) => {
           </div>
           <div className="lg:col-span-5 h-full min-h-[260px] bg-[#F5EFEB] flex items-center justify-center p-4">
             <img
-              src="/assets/illustrations/farm-to-home-journey.svg"
+              src="./assets/illustrations/farm-to-home-journey.svg"
               alt="Editorial illustration of farm to home agricultural journey"
               className="w-full max-w-sm h-auto object-contain"
               referrerPolicy="no-referrer"

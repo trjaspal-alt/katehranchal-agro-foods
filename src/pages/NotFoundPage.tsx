@@ -12,7 +12,7 @@ export const NotFoundPage: React.FC<NotFoundPageProps> = ({ onNavigate }) => {
       {/* Editorial Artwork */}
       <div className="max-w-md mx-auto aspect-[3/2] rounded-2xl overflow-hidden shadow-xs border border-[#124328]/10 bg-[#FAF7F2]">
         <img
-          src="/assets/illustrations/pathway-horizon-404.svg"
+          src="./assets/illustrations/pathway-horizon-404.svg"
           alt="Peaceful village pathway winding towards the morning horizon"
           className="w-full h-full object-cover"
           referrerPolicy="no-referrer"

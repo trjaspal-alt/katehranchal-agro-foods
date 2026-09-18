@@ -296,10 +296,10 @@ export const CATALOG_PRODUCTS: Product[] = [
     productStatus: 'available',
     featured: true,
     imageAlt: 'Golden Desi Ghee in unlabelled glass container with traditional brass serving spoon on linen',
-    primaryImage: '/assets/products/desi-ghee.svg',
+    primaryImage: './assets/products/desi-ghee.svg',
     galleryImages: [
-      '/assets/products/desi-ghee.svg',
-      '/assets/products/desi-ghee-detail.svg',
+      './assets/products/desi-ghee.svg',
+      './assets/products/desi-ghee-detail.svg',
     ],
     ingredients: 'Buffalo milk fat',
     processingMethod: 'Traditional preparation method',
@@ -354,10 +354,10 @@ export const CATALOG_PRODUCTS: Product[] = [
     productStatus: 'available',
     featured: true,
     imageAlt: 'Amber Black Mustard Oil in unlabelled glass bottle with visible whole black mustard seeds on dark stone',
-    primaryImage: '/assets/products/black-mustard-oil.svg',
+    primaryImage: './assets/products/black-mustard-oil.svg',
     galleryImages: [
-      '/assets/products/black-mustard-oil.svg',
-      '/assets/products/black-mustard-oil-detail.svg',
+      './assets/products/black-mustard-oil.svg',
+      './assets/products/black-mustard-oil-detail.svg',
     ],
     ingredients: 'Black mustard oil',
     processingMethod: 'Cold-pressed',
@@ -412,10 +412,10 @@ export const CATALOG_PRODUCTS: Product[] = [
     productStatus: 'available',
     featured: true,
     imageAlt: 'Golden Yellow Mustard Oil in unlabelled glass bottle with visible whole yellow mustard seeds on warm ivory stone',
-    primaryImage: '/assets/products/yellow-mustard-oil.svg',
+    primaryImage: './assets/products/yellow-mustard-oil.svg',
     galleryImages: [
-      '/assets/products/yellow-mustard-oil.svg',
-      '/assets/products/yellow-mustard-oil-detail.svg',
+      './assets/products/yellow-mustard-oil.svg',
+      './assets/products/yellow-mustard-oil-detail.svg',
     ],
     ingredients: 'Yellow mustard oil',
     processingMethod: 'Cold-pressed',
@@ -478,10 +478,10 @@ export const CATALOG_PRODUCTS: Product[] = [
     productStatus: 'available',
     featured: true,
     imageAlt: 'Clean whole wheat grains and wheat stalks in ceramic bowl on natural linen',
-    primaryImage: '/assets/products/natural-wheat.svg',
+    primaryImage: './assets/products/natural-wheat.svg',
     galleryImages: [
-      '/assets/products/natural-wheat.svg',
-      '/assets/products/natural-wheat-detail.svg',
+      './assets/products/natural-wheat.svg',
+      './assets/products/natural-wheat-detail.svg',
     ],
     ingredients: 'Whole wheat grain',
     processingMethod: null,
@@ -521,7 +521,7 @@ export const COMING_SOON_ITEMS: ComingSoonItem[] = [
       'Rotis and chapatis',
       'Household kitchen preparation',
     ],
-    primaryImage: '/assets/products/coming-soon-flour.svg',
+    primaryImage: './assets/products/coming-soon-flour.svg',
   },
   {
     id: 'cs-cow-dung-cakes',
@@ -537,7 +537,7 @@ export const COMING_SOON_ITEMS: ComingSoonItem[] = [
     ],
     domesticUseOnlyNotice:
       'Traditional wood and household products are intended only for appropriate domestic and ceremonial uses. They are not offered for commercial or industrial use.',
-    primaryImage: '/assets/products/coming-soon-cow-dung.svg',
+    primaryImage: './assets/products/coming-soon-cow-dung.svg',
   },
   {
     id: 'cs-traditional-wood-ash',
@@ -553,7 +553,7 @@ export const COMING_SOON_ITEMS: ComingSoonItem[] = [
     ],
     domesticUseOnlyNotice:
       'Traditional wood and household products are intended only for appropriate domestic and ceremonial uses. They are not offered for commercial or industrial use.',
-    primaryImage: '/assets/products/coming-soon-wood-ash.svg',
+    primaryImage: './assets/products/coming-soon-wood-ash.svg',
   },
   {
     id: 'cs-natural-soil',
@@ -568,7 +568,7 @@ export const COMING_SOON_ITEMS: ComingSoonItem[] = [
       'Household gardening',
       'Appropriate ceremonial use',
     ],
-    primaryImage: '/assets/products/coming-soon-natural-soil.svg',
+    primaryImage: './assets/products/coming-soon-natural-soil.svg',
   },
   {
     id: 'cs-dry-neem-wood',
@@ -584,7 +584,7 @@ export const COMING_SOON_ITEMS: ComingSoonItem[] = [
     ],
     domesticUseOnlyNotice:
       'Traditional wood and household products are intended only for appropriate domestic and ceremonial uses. They are not offered for commercial or industrial use.',
-    primaryImage: '/assets/products/coming-soon-neem-wood.svg',
+    primaryImage: './assets/products/coming-soon-neem-wood.svg',
   },
   {
     id: 'cs-dry-mango-wood',
@@ -601,7 +601,7 @@ export const COMING_SOON_ITEMS: ComingSoonItem[] = [
     ],
     domesticUseOnlyNotice:
       'Traditional wood and household products are intended only for appropriate domestic and ceremonial uses. They are not offered for commercial or industrial use.',
-    primaryImage: '/assets/products/coming-soon-mango-wood.svg',
+    primaryImage: './assets/products/coming-soon-mango-wood.svg',
   },
 ];
 

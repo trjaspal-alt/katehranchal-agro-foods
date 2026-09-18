@@ -31,7 +31,7 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
   return (
     <div className={`flex items-center gap-2.5 sm:gap-3.5 select-none ${className}`}>
       <img
-        src="/assets/katehranchal-agro-foods-logo.png"
+        src="./assets/katehranchal-agro-foods-logo.png"
         alt="Katehranchal Agro Foods logo"
         className={`${sizeMap[size]} object-contain shrink-0 transition-transform duration-200`}
         width={size === 'xl' ? 96 : size === 'footer' ? 72 : size === 'lg' ? 60 : size === 'md' ? 42 : 30}

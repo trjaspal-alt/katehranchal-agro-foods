@@ -76,7 +76,7 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({ onNavigate }) => {
               <div className="py-10 text-center space-y-4">
                 <div className="w-36 h-36 mx-auto rounded-2xl overflow-hidden shadow-2xs border border-[#124328]/10 bg-[#FAF7F2]">
                   <img
-                    src="/assets/illustrations/empty-cart-earthen-urn.svg"
+                    src="./assets/illustrations/empty-cart-earthen-urn.svg"
                     alt="Traditional earthen vessel with golden wheat stalk"
                     className="w-full h-full object-cover"
                     referrerPolicy="no-referrer"

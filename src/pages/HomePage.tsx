@@ -91,7 +91,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProduct 
                 {/* Official Logo Display */}
                 <div className="w-52 h-64 sm:w-64 sm:h-80 relative flex items-center justify-center mb-5">
                   <img
-                    src="/assets/katehranchal-agro-foods-logo.png"
+                    src="./assets/katehranchal-agro-foods-logo.png"
                     alt="Katehranchal Agro Foods logo"
                     className="w-full h-full object-contain"
                     width={256}
