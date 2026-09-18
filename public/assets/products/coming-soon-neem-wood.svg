@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%" fill="none">
+  <rect width="400" height="400" fill="#F6F4ED" />
+  <ellipse cx="200" cy="330" rx="120" ry="24" fill="#D8D2C2" opacity="0.6" />
+  <!-- Bundle of Naturally Dried Neem Wood with Jute Twine -->
+  <g transform="rotate(-15 200 230)">
+    <!-- Logs -->
+    <rect x="120" y="200" width="160" height="32" rx="12" fill="#82664A" stroke="#523F2C" stroke-width="2" />
+    <rect x="110" y="225" width="180" height="34" rx="12" fill="#73573D" stroke="#473523" stroke-width="2" />
+    <rect x="130" y="175" width="150" height="30" rx="10" fill="#917354" stroke="#59432D" stroke-width="2" />
+    <!-- Twine binding -->
+    <rect x="185" y="170" width="12" height="95" rx="3" fill="#D6B876" stroke="#9E8142" stroke-width="1.5" />
+    <rect x="220" y="170" width="12" height="95" rx="3" fill="#D6B876" stroke="#9E8142" stroke-width="1.5" />
+  </g>
+  <!-- Small Dried Neem Leaves Beside Bundle -->
+  <path d="M 270 290 Q 295 285 305 270 Q 295 295 270 290 Z" fill="#5F7355" />
+  <path d="M 285 298 Q 310 295 320 280 Q 308 305 285 298 Z" fill="#758A69" />
+</svg>

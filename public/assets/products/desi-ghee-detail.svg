@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%" fill="none">
+  <defs>
+    <radialGradient id="detailGlow" cx="45%" cy="45%" r="65%">
+      <stop offset="0%" stop-color="#FFF8E0" />
+      <stop offset="35%" stop-color="#F7D878" />
+      <stop offset="70%" stop-color="#E0980B" />
+      <stop offset="100%" stop-color="#8F5902" />
+    </radialGradient>
+    <linearGradient id="brassMacro" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCEAB3" />
+      <stop offset="40%" stop-color="#D9A83E" />
+      <stop offset="85%" stop-color="#80560F" />
+    </linearGradient>
+    <linearGradient id="linenTexture" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ECE3D4" />
+      <stop offset="100%" stop-color="#DFD2BE" />
+    </linearGradient>
+  </defs>
+
+  <!-- Linen Background -->
+  <rect width="600" height="600" fill="url(#linenTexture)" />
+
+  <!-- Macro Linen Weave lines -->
+  <g stroke="#D0C1AC" stroke-width="1.2" opacity="0.6">
+    <line x1="0" y1="50" x2="600" y2="50" />
+    <line x1="0" y1="120" x2="600" y2="120" />
+    <line x1="0" y1="190" x2="600" y2="190" />
+    <line x1="0" y1="260" x2="600" y2="260" />
+    <line x1="0" y1="330" x2="600" y2="330" />
+    <line x1="0" y1="400" x2="600" y2="400" />
+    <line x1="0" y1="470" x2="600" y2="470" />
+    <line x1="0" y1="540" x2="600" y2="540" />
+    <line x1="60" y1="0" x2="60" y2="600" />
+    <line x1="140" y1="0" x2="140" y2="600" />
+    <line x1="220" y1="0" x2="220" y2="600" />
+    <line x1="300" y1="0" x2="300" y2="600" />
+    <line x1="380" y1="0" x2="380" y2="600" />
+    <line x1="460" y1="0" x2="460" y2="600" />
+    <line x1="540" y1="0" x2="540" y2="600" />
+  </g>
+
+  <!-- Shallow Depth of Field Shadow -->
+  <ellipse cx="280" cy="330" rx="220" ry="140" fill="#3D2914" opacity="0.3" filter="blur(10px)" />
+
+  <!-- Ceramic / Stone Tasting Bowl Rim on the side -->
+  <path d="M 0 100 Q 150 220 300 180 Q 450 140 600 240 L 600 600 L 0 600 Z" fill="#E2DACD" />
+  <path d="M 0 130 Q 150 245 300 210 Q 450 175 600 270" stroke="#CBBFA9" stroke-width="6" fill="none" />
+
+  <!-- Bowl Content: Golden Ghee Pool -->
+  <path d="M 40 260 Q 200 320 350 280 Q 500 240 580 320 L 600 600 L 0 600 Z" fill="url(#detailGlow)" />
+
+  <!-- Rich Granular Specks across the surface -->
+  <g opacity="0.75">
+    <circle cx="160" cy="360" r="6" fill="#FFFBE8" />
+    <circle cx="210" cy="340" r="5" fill="#FFF3BE" />
+    <circle cx="270" cy="370" r="7" fill="#FFF8D0" />
+    <circle cx="330" cy="330" r="5.5" fill="#FFF6D5" />
+    <circle cx="390" cy="350" r="6" fill="#FFFBE8" />
+    <circle cx="450" cy="370" r="5" fill="#FFF2BD" />
+    <circle cx="190" cy="420" r="8" fill="#FFF6D5" />
+    <circle cx="250" cy="410" r="7" fill="#FFFBE8" />
+    <circle cx="310" cy="440" r="6.5" fill="#FFF8D0" />
+    <circle cx="370" cy="410" r="8" fill="#FFFBE8" />
+    <circle cx="430" cy="430" r="7" fill="#FFF3BE" />
+    <circle cx="230" cy="480" r="9" fill="#FFF8D0" />
+    <circle cx="300" cy="490" r="8" fill="#FFFBE8" />
+    <circle cx="360" cy="470" r="7.5" fill="#FFF2BD" />
+  </g>
+
+  <!-- Brass Spoon Dipped into the Ghee -->
+  <!-- Handle extending off-screen -->
+  <path d="M 120 40 L 260 220" stroke="url(#brassMacro)" stroke-width="26" stroke-linecap="round" />
+  <path d="M 120 38 L 260 218" stroke="#FFF7DA" stroke-width="6" stroke-linecap="round" opacity="0.8" />
+  <!-- Spoon Bowl -->
+  <ellipse cx="300" cy="270" rx="75" ry="50" fill="url(#brassMacro)" transform="rotate(35 300 270)" />
+  <ellipse cx="295" cy="265" rx="60" ry="38" fill="url(#detailGlow)" transform="rotate(35 295 265)" />
+
+  <!-- Molten Golden Drip and Specular Highlight on the Spoon -->
+  <ellipse cx="280" cy="250" rx="25" ry="12" fill="#FFFFFF" opacity="0.75" transform="rotate(35 280 250)" />
+  <path d="M 330 300 Q 345 350 340 375 Q 335 390 330 385 Q 320 375 320 340 Z" fill="#F8D36D" />
+  <circle cx="335" cy="382" r="5" fill="#FFF7DA" />
+</svg>

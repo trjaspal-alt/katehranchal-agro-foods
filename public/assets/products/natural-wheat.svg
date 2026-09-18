@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%" fill="none">
+  <defs>
+    <!-- Background: Warm natural sunlight on rustic kitchen surface -->
+    <linearGradient id="bgWheat" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FAF5EB" />
+      <stop offset="50%" stop-color="#F2E6CE" />
+      <stop offset="100%" stop-color="#E2CCA7" />
+    </linearGradient>
+
+    <!-- Warm Sunlight Beam -->
+    <linearGradient id="sunbeamWheat" x1="0%" y1="10%" x2="70%" y2="80%">
+      <stop offset="0%" stop-color="#FFF8E8" stop-opacity="0.75" />
+      <stop offset="100%" stop-color="#E2CCA7" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Whole Golden Wheat Grain Gradient -->
+    <linearGradient id="wheatGrainGrad" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#FDE8B3" />
+      <stop offset="40%" stop-color="#E5BE6B" />
+      <stop offset="85%" stop-color="#B88A32" />
+      <stop offset="100%" stop-color="#7A5617" />
+    </linearGradient>
+
+    <!-- Linen Sack Gradient -->
+    <linearGradient id="linenSack" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E8DCBE" />
+      <stop offset="50%" stop-color="#D6C49E" />
+      <stop offset="100%" stop-color="#BDB088" />
+    </linearGradient>
+
+    <!-- Earthen Ceramic Bowl -->
+    <linearGradient id="earthenBowl" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8C5835" />
+      <stop offset="45%" stop-color="#6B3F21" />
+      <stop offset="100%" stop-color="#3D200E" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="600" fill="url(#bgWheat)" />
+  <rect width="600" height="600" fill="url(#sunbeamWheat)" />
+
+  <!-- Natural woven surface drape -->
+  <path d="M 0 420 Q 200 400 400 440 L 600 410 L 600 600 L 0 600 Z" fill="#E6D7B8" />
+  <path d="M 0 420 Q 200 400 400 440 L 600 410" stroke="#C9B691" stroke-width="2" />
+
+  <!-- Shadow below ceramic bowl and wheat stalks -->
+  <ellipse cx="280" cy="490" rx="160" ry="32" fill="#544129" opacity="0.32" />
+  <ellipse cx="280" cy="485" rx="120" ry="18" fill="#302213" opacity="0.25" />
+
+  <!-- NATURAL WOVEN SACK FOLD ON THE LEFT -->
+  <path d="M 80 470 C 60 410 80 340 140 310 C 180 290 220 320 230 380 C 235 410 220 450 180 480 Z" fill="url(#linenSack)" stroke="#B3A27D" stroke-width="2" />
+  <path d="M 120 330 Q 150 360 140 430" stroke="#B8A783" stroke-width="2" fill="none" opacity="0.7" />
+  <!-- Grains spilling gently from sack rim -->
+  <path d="M 140 330 Q 180 340 190 380 Q 170 410 130 380 Z" fill="#E5BE6B" />
+
+  <!-- UNDERSTATED EARTHEN CERAMIC BOWL FILLED WITH WHOLE GRAINS -->
+  <!-- Bowl Base Exterior -->
+  <ellipse cx="320" cy="440" rx="140" ry="60" fill="url(#earthenBowl)" stroke="#4A2912" stroke-width="2" />
+  <!-- Bowl Rim -->
+  <ellipse cx="320" cy="380" rx="140" ry="42" fill="#522F17" stroke="#8C5835" stroke-width="2" />
+  <!-- Mounded Wheat Inside Bowl -->
+  <ellipse cx="320" cy="370" rx="130" ry="36" fill="url(#wheatGrainGrad)" />
+
+  <!-- Visible Whole Grains on Mounded Surface -->
+  <g>
+    <ellipse cx="260" cy="360" rx="9" ry="5" fill="#FDE8B3" transform="rotate(-20 260 360)" />
+    <ellipse cx="285" cy="355" rx="10" ry="5.5" fill="#E5BE6B" transform="rotate(15 285 355)" />
+    <ellipse cx="315" cy="352" rx="9.5" ry="5" fill="#FDE8B3" transform="rotate(-5 315 352)" />
+    <ellipse cx="345" cy="358" rx="10" ry="5.5" fill="#E5BE6B" transform="rotate(30 345 358)" />
+    <ellipse cx="375" cy="365" rx="9" ry="5" fill="#FDE8B3" transform="rotate(-15 375 365)" />
+
+    <ellipse cx="240" cy="375" rx="9.5" ry="5" fill="#E5BE6B" transform="rotate(25 240 375)" />
+    <ellipse cx="270" cy="372" rx="10" ry="5.5" fill="#FDE8B3" transform="rotate(-10 270 372)" />
+    <ellipse cx="300" cy="368" rx="9.5" ry="5" fill="#E5BE6B" transform="rotate(10 300 368)" />
+    <ellipse cx="330" cy="370" rx="10" ry="5.5" fill="#FDE8B3" transform="rotate(-25 330 370)" />
+    <ellipse cx="360" cy="375" rx="9" ry="5" fill="#E5BE6B" transform="rotate(15 360 375)" />
+    <ellipse cx="390" cy="380" rx="9.5" ry="5" fill="#FDE8B3" transform="rotate(-35 390 380)" />
+  </g>
+
+  <!-- RIPE GOLDEN WHEAT STALKS WITH AWNS LEANING BESIDE BOWL -->
+  <!-- Stem 1 -->
+  <path d="M 470 480 Q 420 320 380 180" stroke="#C49C47" stroke-width="4" fill="none" stroke-linecap="round" />
+  <!-- Spikelets for Stem 1 -->
+  <g fill="url(#wheatGrainGrad)" stroke="#A37E2E" stroke-width="1">
+    <ellipse cx="385" cy="180" rx="12" ry="6" transform="rotate(-50 385 180)" />
+    <ellipse cx="392" cy="195" rx="12" ry="6" transform="rotate(40 392 195)" />
+    <ellipse cx="395" cy="210" rx="12" ry="6" transform="rotate(-50 395 210)" />
+    <ellipse cx="403" cy="225" rx="12" ry="6" transform="rotate(40 403 225)" />
+    <ellipse cx="406" cy="240" rx="12" ry="6" transform="rotate(-50 406 240)" />
+    <ellipse cx="414" cy="255" rx="12" ry="6" transform="rotate(40 414 255)" />
+    <ellipse cx="417" cy="270" rx="12" ry="6" transform="rotate(-50 417 270)" />
+    <ellipse cx="425" cy="285" rx="12" ry="6" transform="rotate(40 425 285)" />
+    <!-- Fine Awns / Bristles -->
+    <line x1="380" y1="175" x2="350" y2="130" stroke="#C49C47" stroke-width="1.2" />
+    <line x1="390" y1="170" x2="375" y2="120" stroke="#C49C47" stroke-width="1.2" />
+    <line x1="400" y1="185" x2="415" y2="135" stroke="#C49C47" stroke-width="1.2" />
+    <line x1="405" y1="200" x2="435" y2="155" stroke="#C49C47" stroke-width="1.2" />
+  </g>
+
+  <!-- Stem 2 -->
+  <path d="M 490 490 Q 460 350 430 220" stroke="#B88E3B" stroke-width="3.5" fill="none" stroke-linecap="round" />
+  <g fill="url(#wheatGrainGrad)" stroke="#A37E2E" stroke-width="1">
+    <ellipse cx="434" cy="220" rx="11" ry="5.5" transform="rotate(-40 434 220)" />
+    <ellipse cx="442" cy="235" rx="11" ry="5.5" transform="rotate(45 442 235)" />
+    <ellipse cx="445" cy="250" rx="11" ry="5.5" transform="rotate(-40 445 250)" />
+    <ellipse cx="453" cy="265" rx="11" ry="5.5" transform="rotate(45 453 265)" />
+    <line x1="430" y1="215" x2="410" y2="160" stroke="#C49C47" stroke-width="1.2" />
+    <line x1="440" y1="210" x2="445" y2="155" stroke="#C49C47" stroke-width="1.2" />
+  </g>
+
+  <!-- Scattered Whole Clean Grains on Table Foreground -->
+  <g>
+    <ellipse cx="190" cy="495" rx="9" ry="5" fill="#FDE8B3" stroke="#B88A32" stroke-width="0.8" transform="rotate(10 190 495)" />
+    <line x1="184" y1="495" x2="196" y2="495" stroke="#8A601E" stroke-width="0.8" transform="rotate(10 190 495)" />
+
+    <ellipse cx="210" cy="510" rx="8.5" ry="4.5" fill="#E5BE6B" stroke="#B88A32" stroke-width="0.8" transform="rotate(-35 210 510)" />
+    <line x1="204" y1="510" x2="216" y2="510" stroke="#8A601E" stroke-width="0.8" transform="rotate(-35 210 510)" />
+
+    <ellipse cx="235" cy="490" rx="9" ry="5" fill="#FDE8B3" stroke="#B88A32" stroke-width="0.8" transform="rotate(45 235 490)" />
+    <line x1="229" y1="490" x2="241" y2="490" stroke="#8A601E" stroke-width="0.8" transform="rotate(45 235 490)" />
+
+    <ellipse cx="370" cy="505" rx="9.5" ry="5" fill="#E5BE6B" stroke="#B88A32" stroke-width="0.8" transform="rotate(-15 370 505)" />
+    <line x1="364" y1="505" x2="376" y2="505" stroke="#8A601E" stroke-width="0.8" transform="rotate(-15 370 505)" />
+
+    <ellipse cx="400" cy="515" rx="8.5" ry="4.5" fill="#FDE8B3" stroke="#B88A32" stroke-width="0.8" transform="rotate(20 400 515)" />
+    <line x1="394" y1="515" x2="406" y2="515" stroke="#8A601E" stroke-width="0.8" transform="rotate(20 400 515)" />
+  </g>
+</svg>

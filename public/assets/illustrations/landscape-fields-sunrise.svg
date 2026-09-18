@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%" fill="none" role="img" aria-label="Editorial illustration of calm rural agricultural fields and sunrise">
+  <defs>
+    <!-- Paper texture / subtle gradient background -->
+    <linearGradient id="sky-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FBF9F4"/>
+      <stop offset="60%" stop-color="#F6EFE2"/>
+      <stop offset="100%" stop-color="#EFE4D0"/>
+    </linearGradient>
+
+    <!-- Gentle morning sun glow -->
+    <radialGradient id="sun-glow" cx="60%" cy="40%" r="45%">
+      <stop offset="0%" stop-color="#F8D489" stop-opacity="0.85"/>
+      <stop offset="40%" stop-color="#F4BF5E" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#F4EDE2" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Soil and terrace tones -->
+    <linearGradient id="field-tone-1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7D8469"/>
+      <stop offset="100%" stop-color="#5E674A"/>
+    </linearGradient>
+
+    <linearGradient id="field-tone-2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D9A441"/>
+      <stop offset="100%" stop-color="#B88220"/>
+    </linearGradient>
+
+    <linearGradient id="soil-layer" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4A3423"/>
+      <stop offset="100%" stop-color="#2D1F15"/>
+    </linearGradient>
+
+    <filter id="soft-paper-grain" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" result="noise"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.95  0 0 0 0 0.92  0 0 0 0 0.88  0 0 0 0.05 0"/>
+      <feBlend mode="multiply" in="SourceGraphic"/>
+    </filter>
+  </defs>
+
+  <!-- Background Warm Canvas -->
+  <rect width="1200" height="675" fill="url(#sky-gradient)"/>
+  <rect width="1200" height="675" fill="#F8F3E9" opacity="0.3" filter="url(#soft-paper-grain)"/>
+
+  <!-- Morning Sun Disc & Ambient Radiance -->
+  <circle cx="720" cy="270" r="140" fill="url(#sun-glow)"/>
+  <circle cx="720" cy="270" r="54" fill="#F8DE9E" opacity="0.9"/>
+
+  <!-- Distant Village Tree Silhouettes (Minimal Charcoal-Green) -->
+  <path d="M 280 410 Q 320 370 360 410 Q 400 375 440 410 Q 490 380 540 410 L 540 430 L 280 430 Z" fill="#2E4A35" opacity="0.45"/>
+  <path d="M 680 415 Q 730 380 780 415 Q 840 375 900 415 L 900 430 L 680 430 Z" fill="#2E4A35" opacity="0.4"/>
+
+  <!-- Distant Low Ridge Line -->
+  <path d="M 0 430 Q 300 405 600 425 T 1200 420 L 1200 480 L 0 480 Z" fill="#7D866E" opacity="0.35"/>
+
+  <!-- Geometric Agricultural Fields / Contours -->
+  <!-- Middle Tier Mustard & Wheat Bands -->
+  <path d="M 0 460 Q 240 440 520 465 Q 840 495 1200 445 L 1200 525 L 0 525 Z" fill="#E2BD68" opacity="0.6"/>
+  <path d="M 0 500 Q 380 480 780 515 Q 1020 535 1200 505 L 1200 570 L 0 570 Z" fill="#5F7354" opacity="0.75"/>
+
+  <!-- Terraced Soil Base -->
+  <path d="M 0 550 Q 320 530 680 565 Q 980 595 1200 550 L 1200 675 L 0 675 Z" fill="#364938"/>
+  <path d="M 0 610 Q 450 590 850 635 L 1200 620 L 1200 675 L 0 675 Z" fill="#243327"/>
+
+  <!-- Winding Village Pathway (Soft Clay) -->
+  <path d="M 460 675 C 490 620 540 550 560 510 C 580 470 600 445 615 430 L 635 430 C 615 450 595 480 580 520 C 555 575 520 630 490 675 Z" fill="#C9986D" opacity="0.85"/>
+
+  <!-- Hand-Drawn Minimal Linework (Cultivation Rhythms) -->
+  <g stroke="#1E2B21" stroke-width="1.2" stroke-linecap="round" opacity="0.65" fill="none">
+    <path d="M 40 490 Q 220 475 420 495"/>
+    <path d="M 60 515 Q 260 500 460 520"/>
+    <path d="M 80 540 Q 290 525 500 545"/>
+    <path d="M 720 505 Q 920 525 1140 490"/>
+    <path d="M 690 530 Q 900 555 1160 515"/>
+    <path d="M 640 565 Q 880 600 1180 550"/>
+  </g>
+
+  <!-- Foreground Editorial Wheat Stalks (Left Accent) -->
+  <g stroke="#1A281E" stroke-width="1.8" stroke-linecap="round" fill="none">
+    <!-- Stalk 1 -->
+    <path d="M 120 675 Q 125 540 105 460"/>
+    <!-- Wheat Grains -->
+    <path d="M 105 460 Q 90 448 92 435 Q 104 445 105 460" fill="#E0980B"/>
+    <path d="M 105 460 Q 120 448 118 435 Q 106 445 105 460" fill="#E0980B"/>
+    <path d="M 104 440 Q 88 428 90 415 Q 103 425 104 440" fill="#E0980B"/>
+    <path d="M 104 440 Q 120 428 118 415 Q 105 425 104 440" fill="#E0980B"/>
+    <path d="M 102 420 Q 87 408 89 395 Q 101 405 102 420" fill="#E0980B"/>
+    <path d="M 102 420 Q 118 408 116 395 Q 103 405 102 420" fill="#E0980B"/>
+    <!-- Awns -->
+    <line x1="90" y1="415" x2="75" y2="385" stroke="#1A281E" stroke-width="1"/>
+    <line x1="118" y1="415" x2="132" y2="385" stroke="#1A281E" stroke-width="1"/>
+    <line x1="89" y1="395" x2="78" y2="360" stroke="#1A281E" stroke-width="1"/>
+    <line x1="116" y1="395" x2="128" y2="360" stroke="#1A281E" stroke-width="1"/>
+
+    <!-- Stalk 2 (Graceful lean) -->
+    <path d="M 160 675 Q 170 560 195 490"/>
+    <path d="M 195 490 Q 182 478 186 465 Q 196 476 195 490" fill="#D4900B"/>
+    <path d="M 195 490 Q 208 478 206 465 Q 196 476 195 490" fill="#D4900B"/>
+    <path d="M 198 470 Q 185 458 188 445 Q 199 456 198 470" fill="#D4900B"/>
+    <path d="M 198 470 Q 212 458 209 445 Q 199 456 198 470" fill="#D4900B"/>
+    <line x1="188" y1="445" x2="175" y2="415" stroke="#1A281E" stroke-width="1"/>
+    <line x1="209" y1="445" x2="225" y2="415" stroke="#1A281E" stroke-width="1"/>
+  </g>
+
+  <!-- Foreground Mustard Floral Clusters (Right Accent) -->
+  <g fill="#F2BE38" stroke="#1E2A20" stroke-width="1.2">
+    <!-- Plant stem -->
+    <path d="M 1060 675 Q 1045 570 1020 480" fill="none" stroke="#253A2A" stroke-width="2"/>
+    <!-- Yellow Petals / Florets -->
+    <circle cx="1020" cy="480" r="6"/>
+    <circle cx="1012" cy="474" r="5"/>
+    <circle cx="1028" cy="474" r="5"/>
+    <circle cx="1020" cy="466" r="5.5"/>
+    <circle cx="1020" cy="474" r="2.5" fill="#C4800A"/>
+
+    <circle cx="1045" cy="510" r="5.5"/>
+    <circle cx="1038" cy="505" r="4.5"/>
+    <circle cx="1052" cy="505" r="4.5"/>
+    <circle cx="1045" cy="498" r="5"/>
+    <circle cx="1045" cy="505" r="2.2" fill="#C4800A"/>
+  </g>
+</svg>

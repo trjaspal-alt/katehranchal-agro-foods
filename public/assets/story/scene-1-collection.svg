@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%" fill="none">
+  <defs>
+    <radialGradient id="s1-bg" cx="50%" cy="45%" r="65%">
+      <stop offset="0%" stop-color="#FAF6EE"/>
+      <stop offset="60%" stop-color="#EDE5D4"/>
+      <stop offset="100%" stop-color="#DECFA9"/>
+    </radialGradient>
+    <linearGradient id="s1-table" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8C6339"/>
+      <stop offset="30%" stop-color="#5D3E21"/>
+      <stop offset="100%" stop-color="#382413"/>
+    </linearGradient>
+    <linearGradient id="s1-ghee" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFDE75"/>
+      <stop offset="60%" stop-color="#DDA32C"/>
+      <stop offset="100%" stop-color="#A67414"/>
+    </linearGradient>
+    <linearGradient id="s1-oil-black" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#D97F16"/>
+      <stop offset="60%" stop-color="#873D05"/>
+      <stop offset="100%" stop-color="#421A01"/>
+    </linearGradient>
+    <linearGradient id="s1-oil-yellow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFE366"/>
+      <stop offset="60%" stop-color="#E39B0A"/>
+      <stop offset="100%" stop-color="#8F5900"/>
+    </linearGradient>
+    <linearGradient id="s1-brass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FCE59F"/>
+      <stop offset="50%" stop-color="#C79A3B"/>
+      <stop offset="100%" stop-color="#785413"/>
+    </linearGradient>
+    <filter id="s1-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#181007" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Ambient Wall -->
+  <rect width="1200" height="800" fill="url(#s1-bg)"/>
+  <circle cx="600" cy="350" r="420" fill="#FFF7E3" opacity="0.6"/>
+
+  <!-- Natural Kitchen Surface -->
+  <rect y="520" width="1200" height="280" fill="url(#s1-table)"/>
+  <!-- Linen Runner Layer -->
+  <path d="M100 535 Q600 530 1100 540 L1140 760 L60 760 Z" fill="#E8E0D0" opacity="0.9"/>
+  <path d="M120 545 L1080 545" stroke="#C7BBA5" stroke-width="2" stroke-dasharray="6 6"/>
+
+  <!-- Desi Ghee Glass Jar (Center Left) -->
+  <g filter="url(#s1-shadow)">
+    <ellipse cx="460" cy="575" rx="110" ry="26" fill="#22160A" opacity="0.4"/>
+    <!-- Glass body -->
+    <rect x="360" y="360" width="200" height="210" rx="36" fill="#FFFFFF" fill-opacity="0.3" stroke="#FFFFFF" stroke-width="3"/>
+    <!-- Pure Ghee inside -->
+    <rect x="372" y="395" width="176" height="165" rx="24" fill="url(#s1-ghee)"/>
+    <ellipse cx="460" cy="400" rx="84" ry="16" fill="#FFE88F" opacity="0.8"/>
+    <!-- Jar neck and brass lid -->
+    <rect x="395" y="335" width="130" height="30" rx="8" fill="#FFFFFF" opacity="0.6" stroke="#FFFFFF" stroke-width="2"/>
+    <rect x="380" y="305" width="160" height="36" rx="10" fill="url(#s1-brass)" stroke="#573B08" stroke-width="2"/>
+    <!-- Glass sheen -->
+    <path d="M385 375 L385 540" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" opacity="0.65"/>
+    <path d="M400 390 L400 520" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity="0.4"/>
+  </g>
+
+  <!-- Brass Spoon leaning beside Ghee Jar -->
+  <g filter="url(#s1-shadow)">
+    <path d="M360 590 L310 430 Q305 400 280 390 Q255 400 250 430 Q260 470 290 470 L340 600 Z" fill="url(#s1-brass)"/>
+    <ellipse cx="280" cy="425" rx="26" ry="38" fill="#9C7423" opacity="0.5"/>
+    <ellipse cx="280" cy="430" rx="18" ry="26" fill="#FFE366" opacity="0.9"/>
+  </g>
+
+  <!-- Black Mustard Oil Glass Bottle (Center Right) -->
+  <g filter="url(#s1-shadow)">
+    <ellipse cx="720" cy="585" rx="65" ry="18" fill="#22160A" opacity="0.4"/>
+    <!-- Bottle body -->
+    <path d="M670 575 L670 410 Q670 360 705 340 L705 270 L735 270 L735 340 Q770 360 770 410 L770 575 Z" fill="url(#s1-oil-black)"/>
+    <!-- Glass outline & sheen -->
+    <path d="M668 575 L668 410 Q668 358 703 338 L703 268 L737 268 L737 338 Q772 358 772 410 L772 575 Z" stroke="#FFFFFF" stroke-width="3" fill="none" opacity="0.6"/>
+    <path d="M680 415 L680 560" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" opacity="0.5"/>
+    <!-- Cork stopper -->
+    <rect x="707" y="248" width="26" height="22" rx="4" fill="#B8864E" stroke="#573B08" stroke-width="1.5"/>
+  </g>
+
+  <!-- Yellow Mustard Oil Glass Bottle (Right) -->
+  <g filter="url(#s1-shadow)">
+    <ellipse cx="840" cy="590" rx="60" ry="16" fill="#22160A" opacity="0.4"/>
+    <path d="M795 580 L795 430 Q795 385 825 368 L825 300 L855 300 L855 368 Q885 385 885 430 L885 580 Z" fill="url(#s1-oil-yellow)"/>
+    <path d="M793 580 L793 430 Q793 383 823 366 L823 298 L857 298 L857 366 Q887 383 887 430 L887 580 Z" stroke="#FFFFFF" stroke-width="2.5" fill="none" opacity="0.6"/>
+    <path d="M805 435 L805 565" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" opacity="0.6"/>
+    <rect x="827" y="280" width="26" height="20" rx="4" fill="#B8864E" stroke="#573B08" stroke-width="1.5"/>
+  </g>
+
+  <!-- Terracotta Bowl with Black Mustard Seeds (Front Left) -->
+  <g filter="url(#s1-shadow)">
+    <ellipse cx="260" cy="650" rx="80" ry="22" fill="#22160A" opacity="0.35"/>
+    <path d="M190 635 Q260 690 330 635 Q335 605 260 605 Q185 605 190 635 Z" fill="#9C532B" stroke="#5A2D13" stroke-width="2"/>
+    <ellipse cx="260" cy="625" rx="65" ry="22" fill="#211A16"/>
+    <!-- Tiny black seeds -->
+    <circle cx="245" cy="620" r="3.5" fill="#3D352F"/>
+    <circle cx="255" cy="625" r="3.2" fill="#1B1512"/>
+    <circle cx="268" cy="618" r="3.6" fill="#423933"/>
+    <circle cx="280" cy="628" r="3.2" fill="#2A221D"/>
+    <circle cx="235" cy="627" r="3.4" fill="#2D2520"/>
+    <circle cx="270" cy="632" r="3" fill="#16120F"/>
+  </g>
+
+  <!-- Stone Bowl with Yellow Mustard Seeds (Center Front) -->
+  <g filter="url(#s1-shadow)">
+    <ellipse cx="620" cy="665" rx="75" ry="20" fill="#22160A" opacity="0.35"/>
+    <path d="M555 650 Q620 705 685 650 Q690 620 620 620 Q550 620 555 650 Z" fill="#B0A594" stroke="#696053" stroke-width="2"/>
+    <ellipse cx="620" cy="640" rx="60" ry="20" fill="#E5B224"/>
+    <circle cx="610" cy="635" r="3.5" fill="#FCE17E"/>
+    <circle cx="625" cy="642" r="3.2" fill="#B8860B"/>
+    <circle cx="635" cy="636" r="3.6" fill="#FFDF6B"/>
+    <circle cx="600" cy="644" r="3" fill="#C7920A"/>
+  </g>
+
+  <!-- Natural Wheat Grains and Ears (Front Right) -->
+  <g filter="url(#s1-shadow)">
+    <ellipse cx="970" cy="640" rx="110" ry="35" fill="#D1A145" opacity="0.9"/>
+    <!-- Wheat grains scattered -->
+    <ellipse cx="950" cy="630" rx="8" ry="4" fill="#FCE09D" transform="rotate(25 950 630)"/>
+    <ellipse cx="970" cy="645" rx="8" ry="4" fill="#E8B34D" transform="rotate(-15 970 645)"/>
+    <ellipse cx="990" cy="635" rx="9" ry="4.5" fill="#FDE4A8" transform="rotate(40 990 635)"/>
+    <ellipse cx="935" cy="645" rx="8" ry="4" fill="#D99C34" transform="rotate(-35 935 645)"/>
+    <!-- Elegant wheat stalks -->
+    <path d="M1040 680 Q1060 520 1020 380" stroke="#DDA32C" stroke-width="4" stroke-linecap="round" fill="none"/>
+    <path d="M1065 670 Q1080 500 1050 350" stroke="#DDA32C" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <!-- Grains on stalk -->
+    <ellipse cx="1025" cy="400" rx="10" ry="5" fill="#FDE4A8" transform="rotate(-40 1025 400)"/>
+    <ellipse cx="1035" cy="415" rx="10" ry="5" fill="#FDE4A8" transform="rotate(35 1035 415)"/>
+    <ellipse cx="1022" cy="430" rx="10" ry="5" fill="#E8B34D" transform="rotate(-40 1022 430)"/>
+    <ellipse cx="1034" cy="445" rx="10" ry="5" fill="#E8B34D" transform="rotate(35 1034 445)"/>
+  </g>
+</svg>

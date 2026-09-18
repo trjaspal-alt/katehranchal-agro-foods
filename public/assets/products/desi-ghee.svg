@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%" fill="none">
+  <defs>
+    <!-- Background Gradient: Warm kitchen stone setting with natural side lighting -->
+    <linearGradient id="bgGhee" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5EFEB" />
+      <stop offset="60%" stop-color="#EBE3D8" />
+      <stop offset="100%" stop-color="#DECDBB" />
+    </linearGradient>
+
+    <!-- Side Light Beam -->
+    <linearGradient id="sideLightGhee" x1="0%" y1="20%" x2="80%" y2="80%">
+      <stop offset="0%" stop-color="#FFFDF7" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#EBE3D8" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Ghee Liquid Gradient: Rich golden clarified butter with warm depth -->
+    <linearGradient id="gheeLiquid" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#FCE59F" />
+      <stop offset="35%" stop-color="#F3C343" />
+      <stop offset="70%" stop-color="#E0980B" />
+      <stop offset="100%" stop-color="#B87704" />
+    </linearGradient>
+
+    <!-- Brass Serving Spoon Gradient -->
+    <linearGradient id="brassGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F7E7B4" />
+      <stop offset="30%" stop-color="#D9A83E" />
+      <stop offset="70%" stop-color="#9E6E17" />
+      <stop offset="100%" stop-color="#5C3E08" />
+    </linearGradient>
+
+    <!-- Glass Refraction Gradient -->
+    <linearGradient id="glassReflect" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.8" />
+      <stop offset="15%" stop-color="#FFFFFF" stop-opacity="0.1" />
+      <stop offset="85%" stop-color="#FFFFFF" stop-opacity="0.05" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.6" />
+    </linearGradient>
+
+    <!-- Granular texture pattern -->
+    <radialGradient id="granuleGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF4D0" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#E0980B" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Background: Warm rustic kitchen countertop -->
+  <rect width="600" height="600" fill="url(#bgGhee)" />
+  <rect width="600" height="600" fill="url(#sideLightGhee)" />
+
+  <!-- Natural linen cloth draped on the left table surface -->
+  <path d="M 40 420 Q 140 390 280 430 Q 360 450 460 430 L 560 480 L 580 600 L 0 600 Z" fill="#E6DCCF" />
+  <path d="M 60 435 Q 160 405 280 440 Q 380 465 480 440" stroke="#D3C5B2" stroke-width="2" fill="none" />
+  <path d="M 80 450 Q 200 425 320 455 Q 400 475 520 455" stroke="#D3C5B2" stroke-width="1.5" fill="none" />
+
+  <!-- Soft contact shadow beneath glass jar & linen folds -->
+  <ellipse cx="290" cy="485" rx="145" ry="24" fill="#5A4733" opacity="0.32" />
+  <ellipse cx="290" cy="482" rx="110" ry="14" fill="#2E2012" opacity="0.25" />
+
+  <!-- UNLABELLED CLEAN GLASS CONTAINER (No fake label, pure culinary glass) -->
+  <!-- Back Glass Layer -->
+  <rect x="195" y="210" width="190" height="250" rx="30" fill="#EFE8DC" opacity="0.6" />
+
+  <!-- Golden Ghee Content Inside Glass -->
+  <rect x="205" y="245" width="170" height="205" rx="20" fill="url(#gheeLiquid)" />
+
+  <!-- Natural Granular Texture Highlights (Simulating wholesome slow-simmered texture) -->
+  <g opacity="0.45">
+    <circle cx="230" cy="280" r="3.5" fill="#FFF6D6" />
+    <circle cx="260" cy="270" r="2.5" fill="#FFF6D6" />
+    <circle cx="310" cy="290" r="3" fill="#FFF6D6" />
+    <circle cx="340" cy="275" r="2.5" fill="#FFF6D6" />
+    <circle cx="245" cy="330" r="3" fill="#FFF6D6" />
+    <circle cx="280" cy="320" r="4" fill="#FFF6D6" />
+    <circle cx="325" cy="340" r="3.5" fill="#FFF6D6" />
+    <circle cx="355" cy="325" r="2" fill="#FFF6D6" />
+    <circle cx="235" cy="380" r="3.5" fill="#FFF6D6" />
+    <circle cx="270" cy="390" r="4" fill="#FFF6D6" />
+    <circle cx="315" cy="375" r="3" fill="#FFF6D6" />
+    <circle cx="345" cy="400" r="2.5" fill="#FFF6D6" />
+  </g>
+
+  <!-- Surface Level Meniscus Curve -->
+  <ellipse cx="290" cy="246" rx="85" ry="14" fill="#FCE59F" opacity="0.9" />
+  <ellipse cx="290" cy="245" rx="78" ry="10" fill="#F8D36D" />
+
+  <!-- Front Glass Highlights and Reflections (Unlabelled clear glass) -->
+  <rect x="195" y="210" width="190" height="250" rx="30" fill="url(#glassReflect)" stroke="#FFFFFF" stroke-width="2" opacity="0.85" />
+  <!-- Crisp Vertical Light Glare -->
+  <path d="M 215 230 L 215 440" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" opacity="0.75" />
+  <path d="M 227 245 L 227 425" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" opacity="0.45" />
+  <path d="M 368 235 L 368 440" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" opacity="0.4" />
+
+  <!-- Glass Jar Neck & Lip -->
+  <rect x="225" y="180" width="130" height="34" rx="8" fill="#F4EDE2" stroke="#FFFFFF" stroke-width="2" opacity="0.9" />
+  <!-- Traditional Natural Cork or Hermetic Glass Stopper / Lid -->
+  <rect x="215" y="150" width="150" height="36" rx="10" fill="#D3A76F" stroke="#9E6E34" stroke-width="2" />
+  <path d="M 220 162 L 360 162" stroke="#E6C898" stroke-width="2" opacity="0.6" />
+
+  <!-- TRADITIONAL BRASS SERVING SPOON RESTING BESIDE THE JAR -->
+  <!-- Spoon Shadow -->
+  <path d="M 370 480 Q 440 485 510 470" stroke="#4A3B2A" stroke-width="12" stroke-linecap="round" opacity="0.35" />
+  <!-- Spoon Handle -->
+  <path d="M 330 380 Q 410 440 510 465" stroke="url(#brassGrad)" stroke-width="8" stroke-linecap="round" />
+  <path d="M 330 378 Q 410 438 510 463" stroke="#FFF5D1" stroke-width="2" stroke-linecap="round" opacity="0.7" />
+  <!-- Spoon Bowl with Golden Ghee Glistening -->
+  <ellipse cx="320" cy="370" rx="28" ry="18" fill="url(#brassGrad)" transform="rotate(-30 320 370)" />
+  <ellipse cx="318" cy="368" rx="22" ry="12" fill="url(#gheeLiquid)" transform="rotate(-30 318 368)" />
+  <ellipse cx="314" cy="364" rx="8" ry="4" fill="#FFF7DA" transform="rotate(-30 314 364)" opacity="0.9" />
+
+  <!-- Subtle Ambient Glow -->
+  <circle cx="290" cy="330" r="140" fill="url(#granuleGlow)" />
+</svg>

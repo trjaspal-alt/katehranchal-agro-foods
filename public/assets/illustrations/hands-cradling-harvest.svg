@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%" fill="none" role="img" aria-label="Editorial illustration of hands gently cradling harvest grains">
+  <defs>
+    <radialGradient id="hch-bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FCFAF5"/>
+      <stop offset="70%" stop-color="#F7EFE1"/>
+      <stop offset="100%" stop-color="#EFE3CF"/>
+    </radialGradient>
+    <radialGradient id="hch-glow" cx="50%" cy="40%" r="35%">
+      <stop offset="0%" stop-color="#FFE094" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#FBF9F4" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="600" height="600" rx="16" fill="url(#hch-bg)"/>
+  <circle cx="300" cy="270" r="160" fill="url(#hch-glow)"/>
+
+  <!-- Background Decorative Agricultural Arc -->
+  <circle cx="300" cy="270" r="180" stroke="#7D8469" stroke-width="1.2" stroke-dasharray="3 4" opacity="0.5"/>
+
+  <!-- Golden Grains & Seeds Floating Above Hands -->
+  <!-- Mustard Seeds (Small warm charcoal/brown and yellow pearls) -->
+  <g fill="#5C3B1E" stroke="#1D2A20" stroke-width="0.8">
+    <circle cx="280" cy="220" r="3.5"/>
+    <circle cx="295" cy="212" r="3"/>
+    <circle cx="310" cy="222" r="3.5"/>
+    <circle cx="325" cy="215" r="3"/>
+    <circle cx="302" cy="228" r="3.2"/>
+  </g>
+  <g fill="#F2BF38" stroke="#1D2A20" stroke-width="0.8">
+    <circle cx="270" cy="235" r="4"/>
+    <circle cx="290" cy="242" r="3.8"/>
+    <circle cx="315" cy="238" r="4"/>
+    <circle cx="330" cy="230" r="3.5"/>
+  </g>
+
+  <!-- Wheat Grains (Oval golden seeds) -->
+  <g fill="#E0980B" stroke="#1D2A20" stroke-width="1.2">
+    <ellipse cx="285" cy="255" rx="8" ry="4" transform="rotate(-20 285 255)"/>
+    <line x1="279" y1="255" x2="291" y2="255" stroke="#1D2A20" stroke-width="0.8" transform="rotate(-20 285 255)"/>
+
+    <ellipse cx="310" cy="254" rx="8" ry="4" transform="rotate(25 310 254)"/>
+    <line x1="304" y1="254" x2="316" y2="254" stroke="#1D2A20" stroke-width="0.8" transform="rotate(25 310 254)"/>
+
+    <ellipse cx="298" cy="268" rx="8" ry="4" transform="rotate(5 298 268)"/>
+    <line x1="292" y1="268" x2="304" y2="268" stroke="#1D2A20" stroke-width="0.8" transform="rotate(5 298 268)"/>
+
+    <ellipse cx="275" cy="275" rx="8" ry="4" transform="rotate(-35 275 275)"/>
+    <ellipse cx="325" cy="272" rx="8" ry="4" transform="rotate(40 325 272)"/>
+  </g>
+
+  <!-- Minimalist Hand Linework & Forms (Gentle, caring cupped palms) -->
+  <!-- Left Hand / Palm -->
+  <path d="M 170 410 C 200 370 230 330 260 305 C 275 292 290 300 285 315 C 270 340 240 380 220 440" 
+        fill="#E8CFB8" stroke="#1D2A20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Left Thumb -->
+  <path d="M 230 335 C 245 320 260 325 268 338 C 265 350 250 365 240 375" 
+        fill="#DFC2AA" stroke="#1D2A20" stroke-width="1.8"/>
+
+  <!-- Right Hand / Palm -->
+  <path d="M 430 410 C 400 370 370 330 340 305 C 325 292 310 300 315 315 C 330 340 360 380 380 440" 
+        fill="#E8CFB8" stroke="#1D2A20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Right Thumb -->
+  <path d="M 370 335 C 355 320 340 325 332 338 C 335 350 350 365 360 375" 
+        fill="#DFC2AA" stroke="#1D2A20" stroke-width="1.8"/>
+
+  <!-- Cupped Base Joining Wrist Form -->
+  <path d="M 220 440 C 260 460 340 460 380 440 L 400 500 C 350 515 250 515 200 500 Z" 
+        fill="#D6B89D" stroke="#1D2A20" stroke-width="2" stroke-linejoin="round"/>
+
+  <!-- Two Wheat Sheaves Rising From Base -->
+  <g stroke="#1D2A20" stroke-width="1.4" fill="none">
+    <path d="M 180 490 Q 150 380 130 320"/>
+    <ellipse cx="128" cy="315" rx="7" ry="3.5" transform="rotate(-40 128 315)" fill="#E0980B"/>
+    <ellipse cx="138" cy="305" rx="7" ry="3.5" transform="rotate(-30 138 305)" fill="#E0980B"/>
+    <ellipse cx="120" cy="295" rx="7" ry="3.5" transform="rotate(-50 120 295)" fill="#E0980B"/>
+
+    <path d="M 420 490 Q 450 380 470 320"/>
+    <ellipse cx="472" cy="315" rx="7" ry="3.5" transform="rotate(40 472 315)" fill="#E0980B"/>
+    <ellipse cx="462" cy="305" rx="7" ry="3.5" transform="rotate(30 462 305)" fill="#E0980B"/>
+    <ellipse cx="480" cy="295" rx="7" ry="3.5" transform="rotate(50 480 295)" fill="#E0980B"/>
+  </g>
+</svg>

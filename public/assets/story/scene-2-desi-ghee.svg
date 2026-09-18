@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%" fill="none">
+  <defs>
+    <radialGradient id="s2-bg" cx="45%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#FFF9EC"/>
+      <stop offset="50%" stop-color="#F3E3C5"/>
+      <stop offset="100%" stop-color="#D1B683"/>
+    </radialGradient>
+    <linearGradient id="s2-wood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6E4720"/>
+      <stop offset="50%" stop-color="#472B10"/>
+      <stop offset="100%" stop-color="#281606"/>
+    </linearGradient>
+    <linearGradient id="s2-ghee-pot" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFE58A"/>
+      <stop offset="40%" stop-color="#E3A727"/>
+      <stop offset="85%" stop-color="#A36B0B"/>
+      <stop offset="100%" stop-color="#704502"/>
+    </linearGradient>
+    <linearGradient id="s2-brass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFF0B8"/>
+      <stop offset="50%" stop-color="#D1A13D"/>
+      <stop offset="100%" stop-color="#825C15"/>
+    </linearGradient>
+    <filter id="s2-blur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="40"/>
+    </filter>
+    <filter id="s2-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="22" flood-color="#221204" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#s2-bg)"/>
+  <!-- Ambient golden kitchen glow -->
+  <circle cx="550" cy="380" r="320" fill="#FFE8A3" opacity="0.5" filter="url(#s2-blur)"/>
+
+  <!-- Wooden Kitchen Counter -->
+  <rect y="500" width="1200" height="300" fill="url(#s2-wood)"/>
+  <!-- Grain stripes on wood -->
+  <line x1="0" y1="550" x2="1200" y2="550" stroke="#38210B" stroke-width="1.5" opacity="0.4"/>
+  <line x1="0" y1="620" x2="1200" y2="620" stroke="#38210B" stroke-width="2" opacity="0.3"/>
+
+  <!-- Traditional Brass Vessel & Glass Jar with Golden Ghee -->
+  <g filter="url(#s2-shadow)">
+    <ellipse cx="560" cy="565" rx="160" ry="35" fill="#1B0E04" opacity="0.45"/>
+    <!-- Clear Glass Container -->
+    <rect x="410" y="290" width="300" height="270" rx="50" fill="#FFFFFF" fill-opacity="0.25" stroke="#FFFFFF" stroke-width="3"/>
+    <!-- Rich Golden Danedaar Ghee -->
+    <rect x="425" y="340" width="270" height="205" rx="35" fill="url(#s2-ghee-pot)"/>
+    <!-- Surface texture of granular ghee -->
+    <ellipse cx="560" cy="350" rx="130" ry="26" fill="#FFE88F" opacity="0.9"/>
+    <circle cx="520" cy="352" r="4" fill="#FFF5C7"/>
+    <circle cx="570" cy="346" r="5" fill="#FFF9DF"/>
+    <circle cx="610" cy="355" r="4.5" fill="#E8B23C"/>
+    <circle cx="480" cy="358" r="4" fill="#FFF2B8"/>
+
+    <!-- Jar Rim and Open Golden Lid Resting Beside -->
+    <rect x="450" y="260" width="220" height="35" rx="10" fill="#FFFFFF" opacity="0.5" stroke="#FFFFFF" stroke-width="2.5"/>
+    <!-- Glass Reflections -->
+    <path d="M440 315 L440 530" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" opacity="0.6"/>
+    <path d="M462 330 L462 500" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" opacity="0.4"/>
+  </g>
+
+  <!-- Resting Brass Lid tilted on side -->
+  <g filter="url(#s2-shadow)">
+    <ellipse cx="765" cy="520" rx="45" ry="95" fill="url(#s2-brass)" stroke="#5C3D0A" stroke-width="3" transform="rotate(-20 765 520)"/>
+    <ellipse cx="765" cy="520" rx="35" ry="80" fill="#B08125" transform="rotate(-20 765 520)"/>
+  </g>
+
+  <!-- Handcrafted Brass Serving Spoon dripping golden liquid ghee -->
+  <g filter="url(#s2-shadow)">
+    <!-- Handle extending up and left -->
+    <path d="M280 180 Q390 280 500 370" stroke="url(#s2-brass)" stroke-width="14" stroke-linecap="round" fill="none"/>
+    <!-- Deep Oval Spoon Bowl -->
+    <ellipse cx="510" cy="375" rx="45" ry="30" fill="url(#s2-brass)" transform="rotate(-15 510 375)"/>
+    <!-- Rich melted ghee pool inside spoon bowl -->
+    <ellipse cx="512" cy="373" rx="36" ry="22" fill="#FFF09E" transform="rotate(-15 512 373)"/>
+    <ellipse cx="512" cy="375" rx="28" ry="16" fill="#FFAE19" transform="rotate(-15 512 375)"/>
+    <!-- Golden drop dripping down toward jar -->
+    <path d="M515 395 C515 410 522 418 522 430 C522 438 515 445 508 445 C501 445 494 438 494 430 C494 418 501 410 501 395 Z" fill="#FFC229"/>
+  </g>
+
+  <!-- Small Clay Bowl with Clarified Buttercurd notes in background -->
+  <g opacity="0.8">
+    <ellipse cx="320" cy="535" rx="60" ry="18" fill="#1B0E04" opacity="0.3"/>
+    <path d="M270 520 Q320 565 370 520 Q375 495 320 495 Q265 495 270 520 Z" fill="#9C532B" stroke="#5A2D13" stroke-width="2"/>
+  </g>
+</svg>

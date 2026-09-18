@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+/* 
+ * Katehranchal Agro Foods - Permanent Typography & Token System
+ * Display & Primary Brand Typeface: Fraunces
+ * Functional & Supporting Typeface: Manrope
+ */
+
+@font-face {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url('/assets/fonts/fraunces/fraunces.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('/assets/fonts/manrope/manrope.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@theme {
+  --font-serif: "Fraunces", Georgia, "Times New Roman", serif;
+  --font-sans: "Manrope", "Segoe UI", Arial, sans-serif;
+
+  /* Official Katehranchal Agro Foods Logo-Derived Theme Tokens */
+  --color-forest: #124328;
+  --color-forest-dark: #0D301C;
+  --color-forest-light: #1A5A35;
+
+  --color-field: #1C602A;
+  --color-field-light: #257C37;
+  --color-field-dark: #144622;
+
+  --color-wheat: #E0980B;
+  --color-wheat-light: #EFA823;
+  --color-wheat-dark: #C48206;
+
+  --color-sunrise: #EAA003;
+  --color-terracotta: #7E4822;
+
+  --color-cream: #FBF9F4;
+  --color-cream-soft: #F5EFEB;
+  --color-cream-dark: #ECE4D8;
+
+  --color-charcoal: #132218;
+  --color-charcoal-muted: #3D4A41;
+
+  /* Restrained secondary accent from river in official logo */
+  --color-river: #007B8C;
+  --color-river-light: #1594A7;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #FBF9F4;
+    color: #132218;
+    overflow-x: hidden;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  h1, h2, h3, h4, .font-serif-heading {
+    font-family: var(--font-serif);
+    letter-spacing: -0.012em;
+    line-height: 1.2;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+}
+
+/* Reduced Motion Compliance */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

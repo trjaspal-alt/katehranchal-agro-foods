@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%" fill="none">
+  <defs>
+    <radialGradient id="s4-sun" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#FFFBEB"/>
+      <stop offset="45%" stop-color="#FDEAC2"/>
+      <stop offset="100%" stop-color="#DFC286"/>
+    </radialGradient>
+    <linearGradient id="s4-linen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E3D9C3"/>
+      <stop offset="50%" stop-color="#C7BBA2"/>
+      <stop offset="100%" stop-color="#9E9074"/>
+    </linearGradient>
+    <linearGradient id="s4-clay" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#B86235"/>
+      <stop offset="60%" stop-color="#853E19"/>
+      <stop offset="100%" stop-color="#522108"/>
+    </linearGradient>
+    <linearGradient id="s4-grain" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFF0B8"/>
+      <stop offset="50%" stop-color="#E3AF44"/>
+      <stop offset="100%" stop-color="#A67314"/>
+    </linearGradient>
+    <filter id="s4-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="22" flood-color="#211505" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#s4-sun)"/>
+  <!-- Morning Sunlight Rays -->
+  <path d="M300 0 L550 500 L400 500 Z" fill="#FFFFFF" opacity="0.2"/>
+  <path d="M500 0 L750 500 L620 500 Z" fill="#FFFFFF" opacity="0.25"/>
+  <path d="M700 0 L950 500 L840 500 Z" fill="#FFFFFF" opacity="0.18"/>
+
+  <!-- Textured Linen Table Surface -->
+  <rect y="480" width="1200" height="320" fill="url(#s4-linen)"/>
+  <!-- Coarse fabric weave -->
+  <line x1="0" y1="510" x2="1200" y2="510" stroke="#AFA185" stroke-width="1.5" stroke-dasharray="8 8"/>
+  <line x1="0" y1="560" x2="1200" y2="560" stroke="#AFA185" stroke-width="1.5" stroke-dasharray="8 8"/>
+
+  <!-- Traditional Terracotta Urli / Clay Pot overflowing with whole wheat grains -->
+  <g filter="url(#s4-shadow)">
+    <ellipse cx="580" cy="590" rx="220" ry="50" fill="#241505" opacity="0.45"/>
+    <!-- Pot body -->
+    <path d="M360 480 Q320 580 430 630 Q580 670 730 630 Q840 580 800 480 Z" fill="url(#s4-clay)"/>
+    <!-- Overflowing mound of golden grains -->
+    <ellipse cx="580" cy="475" rx="210" ry="65" fill="url(#s4-grain)"/>
+    <ellipse cx="580" cy="460" rx="160" ry="48" fill="#FFECA8" opacity="0.85"/>
+    <!-- Individual grain definition -->
+    <ellipse cx="520" cy="460" rx="10" ry="5" fill="#C79124" transform="rotate(35 520 460)"/>
+    <ellipse cx="550" cy="450" rx="10" ry="5" fill="#FCE088" transform="rotate(-20 550 450)"/>
+    <ellipse cx="590" cy="465" rx="11" ry="5.5" fill="#E5A934" transform="rotate(45 590 465)"/>
+    <ellipse cx="630" cy="455" rx="10" ry="5" fill="#FDE896" transform="rotate(-40 630 455)"/>
+    <ellipse cx="660" cy="470" rx="10" ry="5" fill="#C79124" transform="rotate(15 660 470)"/>
+  </g>
+
+  <!-- Cascading wheat grains pouring down onto linen -->
+  <g filter="url(#s4-shadow)">
+    <path d="M480 570 Q540 640 520 680 Q580 690 640 675 Q620 620 680 570 Z" fill="#E3AF44" opacity="0.95"/>
+    <ellipse cx="540" cy="680" rx="40" ry="16" fill="#C79124"/>
+    <ellipse cx="535" cy="678" rx="10" ry="5" fill="#FFEAA3" transform="rotate(25 535 678)"/>
+    <ellipse cx="555" cy="682" rx="9" ry="4.5" fill="#F0BF5B" transform="rotate(-30 555 682)"/>
+  </g>
+
+  <!-- Golden Tall Wheat Stalks (Left and Right Framing) -->
+  <!-- Left stalk cluster -->
+  <g filter="url(#s4-shadow)">
+    <path d="M260 700 Q200 480 280 240" stroke="#DDA32C" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+    <path d="M310 700 Q270 440 340 200" stroke="#E5B23C" stroke-width="4" stroke-linecap="round" fill="none"/>
+    <!-- Spikes and awns -->
+    <ellipse cx="285" cy="260" rx="14" ry="6" fill="#FFE89E" transform="rotate(-45 285 260)"/>
+    <ellipse cx="270" cy="280" rx="14" ry="6" fill="#D99C27" transform="rotate(40 270 280)"/>
+    <ellipse cx="288" cy="300" rx="14" ry="6" fill="#FFE89E" transform="rotate(-45 288 300)"/>
+    <ellipse cx="272" cy="320" rx="14" ry="6" fill="#D99C27" transform="rotate(40 272 320)"/>
+    <line x1="285" y1="260" x2="260" y2="210" stroke="#D99C27" stroke-width="1.5"/>
+    <line x1="270" y1="280" x2="235" y2="245" stroke="#D99C27" stroke-width="1.5"/>
+  </g>
+
+  <!-- Right stalk cluster -->
+  <g filter="url(#s4-shadow)">
+    <path d="M920 700 Q980 460 910 220" stroke="#DDA32C" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+    <ellipse cx="910" cy="240" rx="14" ry="6" fill="#FFE89E" transform="rotate(45 910 240)"/>
+    <ellipse cx="925" cy="260" rx="14" ry="6" fill="#D99C27" transform="rotate(-40 925 260)"/>
+    <ellipse cx="908" cy="280" rx="14" ry="6" fill="#FFE89E" transform="rotate(45 908 280)"/>
+    <line x1="910" y1="240" x2="935" y2="190" stroke="#D99C27" stroke-width="1.5"/>
+  </g>
+</svg>

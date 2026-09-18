@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%" fill="none">
+  <defs>
+    <radialGradient id="s3-bg" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#F7F3EA"/>
+      <stop offset="60%" stop-color="#E3DBC7"/>
+      <stop offset="100%" stop-color="#C7BBA5"/>
+    </radialGradient>
+    <linearGradient id="s3-stone" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#52544F"/>
+      <stop offset="50%" stop-color="#373934"/>
+      <stop offset="100%" stop-color="#1F201C"/>
+    </linearGradient>
+    <linearGradient id="s3-black-oil" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E68519"/>
+      <stop offset="40%" stop-color="#A64D07"/>
+      <stop offset="80%" stop-color="#632600"/>
+      <stop offset="100%" stop-color="#381500"/>
+    </linearGradient>
+    <linearGradient id="s3-yellow-oil" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFEA78"/>
+      <stop offset="45%" stop-color="#EBA50F"/>
+      <stop offset="85%" stop-color="#A36B00"/>
+      <stop offset="100%" stop-color="#6E4400"/>
+    </linearGradient>
+    <filter id="s3-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#161410" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#s3-bg)"/>
+  <!-- Soft sun flare through window -->
+  <ellipse cx="600" cy="280" rx="380" ry="220" fill="#FFF7E3" opacity="0.55"/>
+
+  <!-- Natural Stone Worktop -->
+  <rect y="500" width="1200" height="300" fill="url(#s3-stone)"/>
+  <path d="M0 500 Q600 495 1200 500 L1200 515 L0 515 Z" fill="#6D7068" opacity="0.6"/>
+
+  <!-- Black Mustard Oil Bottle (Left) -->
+  <g filter="url(#s3-shadow)">
+    <ellipse cx="440" cy="560" rx="75" ry="22" fill="#111210" opacity="0.5"/>
+    <!-- Glass Bottle Silhouette -->
+    <path d="M380 550 L380 340 Q380 270 425 245 L425 160 L455 160 L455 245 Q500 270 500 340 L500 550 Z" fill="url(#s3-black-oil)"/>
+    <path d="M378 550 L378 340 Q378 268 423 243 L423 158 L457 158 L457 243 Q502 268 502 340 L502 550 Z" stroke="#FFFFFF" stroke-width="3" fill="none" opacity="0.65"/>
+    <!-- Glass Highlights -->
+    <path d="M395 330 L395 530" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" opacity="0.6"/>
+    <path d="M410 350 L410 500" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity="0.35"/>
+    <!-- Wooden Cork -->
+    <rect x="427" y="135" width="26" height="26" rx="4" fill="#8C5F32" stroke="#3D2611" stroke-width="1.5"/>
+  </g>
+
+  <!-- Yellow Mustard Oil Bottle (Right) -->
+  <g filter="url(#s3-shadow)">
+    <ellipse cx="680" cy="560" rx="75" ry="22" fill="#111210" opacity="0.5"/>
+    <path d="M620 550 L620 340 Q620 270 665 245 L665 160 L695 160 L695 245 Q740 270 740 340 L740 550 Z" fill="url(#s3-yellow-oil)"/>
+    <path d="M618 550 L618 340 Q618 268 663 243 L663 158 L697 158 L697 243 Q742 268 742 340 L742 550 Z" stroke="#FFFFFF" stroke-width="3" fill="none" opacity="0.65"/>
+    <path d="M635 330 L635 530" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" opacity="0.65"/>
+    <path d="M650 350 L650 500" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity="0.4"/>
+    <rect x="667" y="135" width="26" height="26" rx="4" fill="#8C5F32" stroke="#3D2611" stroke-width="1.5"/>
+  </g>
+
+  <!-- Artisanal Stone Bowl with Whole Black Mustard Seeds (Front Left) -->
+  <g filter="url(#s3-shadow)">
+    <ellipse cx="280" cy="630" rx="95" ry="26" fill="#111210" opacity="0.45"/>
+    <path d="M200 610 Q280 675 360 610 Q365 575 280 575 Q195 575 200 610 Z" fill="#40423D" stroke="#262624" stroke-width="2"/>
+    <ellipse cx="280" cy="595" rx="75" ry="24" fill="#181614"/>
+    <!-- Mustard seed clusters -->
+    <circle cx="260" cy="590" r="3.6" fill="#3D3733"/>
+    <circle cx="275" cy="598" r="3.4" fill="#24201C"/>
+    <circle cx="290" cy="588" r="3.8" fill="#423932"/>
+    <circle cx="305" cy="600" r="3.2" fill="#181512"/>
+    <circle cx="245" cy="598" r="3.5" fill="#2E2721"/>
+    <circle cx="270" cy="606" r="3.3" fill="#362E27"/>
+  </g>
+
+  <!-- Artisanal Ceramic Bowl with Whole Yellow Mustard Seeds (Front Right) -->
+  <g filter="url(#s3-shadow)">
+    <ellipse cx="850" cy="630" rx="95" ry="26" fill="#111210" opacity="0.45"/>
+    <path d="M770 610 Q850 675 930 610 Q935 575 850 575 Q765 575 770 610 Z" fill="#BDB29F" stroke="#6B6354" stroke-width="2"/>
+    <ellipse cx="850" cy="595" rx="75" ry="24" fill="#DDA31E"/>
+    <circle cx="835" cy="590" r="3.6" fill="#FFF094"/>
+    <circle cx="850" cy="598" r="3.4" fill="#B07C0C"/>
+    <circle cx="865" cy="588" r="3.8" fill="#FFE875"/>
+    <circle cx="880" cy="600" r="3.2" fill="#9C6C04"/>
+    <circle cx="820" cy="598" r="3.5" fill="#E8B33C"/>
+  </g>
+
+  <!-- Mustard Sprig / Greens with Tiny Blossom (Foreground Accent) -->
+  <path d="M510 650 Q560 610 610 660" stroke="#256B38" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+  <circle cx="570" cy="615" r="4.5" fill="#FFE566"/>
+  <circle cx="580" cy="622" r="4" fill="#FFE566"/>
+</svg>

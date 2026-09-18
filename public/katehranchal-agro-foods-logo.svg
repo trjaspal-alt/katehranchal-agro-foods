@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1200" width="1000" height="1200">
+  <defs>
+    <!-- Clip path to keep internal artwork precisely inside inner pointed leaf -->
+    <clipPath id="innerLeafClip">
+      <path d="M 500,75 
+               C 600,165 770,300 805,485
+               C 840,665 715,860 500,1055
+               C 285,860 160,665 195,485
+               C 230,300 400,165 500,75 Z" />
+    </clipPath>
+  </defs>
+
+  <!-- Outer Deep Forest Green Leaf Frame -->
+  <path d="M 500,20 
+           C 625,120 830,280 875,500
+           C 915,700 770,915 500,1140
+           C 230,915 85,700 125,500
+           C 170,280 375,120 500,20 Z
+           M 500,82
+           C 405,170 240,305 208,485
+           C 175,660 295,850 500,1045
+           C 705,850 825,660 792,485
+           C 760,305 595,170 500,82 Z"
+        fill="#124328" />
+
+  <!-- Inner Content Group clipped to inner leaf contour -->
+  <g clip-path="url(#innerLeafClip)">
+    <!-- White / Natural Ivory Base -->
+    <rect width="1000" height="1200" fill="#FFFFFF" />
+
+    <!-- Traditional Rural Canopy / Village Roof / Temple Arch (Terracotta Brown) -->
+    <path d="M 430,515 
+             L 600,320 
+             C 630,335 650,300 655,275 
+             C 675,325 735,355 780,430 
+             C 785,440 782,460 782,545 
+             L 765,545 
+             C 765,475 735,420 680,410 
+             C 625,400 580,445 520,490 
+             Z"
+          fill="#7E4822" />
+
+    <!-- Radiant Sunrise (Yellow-Gold) -->
+    <!-- Sun Disc -->
+    <path d="M 525,665 
+             A 75,75 0 0,1 675,665 
+             Z" 
+          fill="#EAA003" />
+
+    <!-- 7 Triangular Radiant Sunbeams -->
+    <!-- Ray 1 (Leftmost angle) -->
+    <polygon points="505,622 530,626 470,612" fill="#EAA003" />
+    <!-- Ray 2 -->
+    <polygon points="525,585 548,595 500,560" fill="#EAA003" />
+    <!-- Ray 3 -->
+    <polygon points="555,555 575,570 545,515" fill="#EAA003" />
+    <!-- Ray 4 (Vertical Center) -->
+    <polygon points="593,540 607,540 600,480" fill="#EAA003" />
+    <!-- Ray 5 -->
+    <polygon points="625,570 645,555 655,515" fill="#EAA003" />
+    <!-- Ray 6 -->
+    <polygon points="652,595 675,585 700,560" fill="#EAA003" />
+    <!-- Ray 7 (Rightmost angle) -->
+    <polygon points="670,626 695,622 730,612" fill="#EAA003" />
+
+    <!-- Agricultural Crop Fields (Terraced Furrows) -->
+    <!-- Field 1: Upper Green Band -->
+    <path d="M 525,665 
+             C 580,665 670,675 745,715 
+             C 775,730 805,765 825,800 
+             C 760,820 670,750 560,715 
+             C 530,705 500,700 480,700 
+             Z" 
+          fill="#1C602A" />
+
+    <!-- Field 2: Middle Green Band -->
+    <path d="M 560,730 
+             C 650,765 725,825 765,880 
+             C 715,925 640,890 565,820 
+             C 505,765 470,745 445,745 
+             Z" 
+          fill="#1E6B2F" />
+
+    <!-- Field 3: Lower Deep Forest Green Contour -->
+    <path d="M 545,845 
+             C 610,905 665,950 685,975 
+             C 620,1020 545,1045 500,1055 
+             C 475,995 460,940 455,900 
+             Z" 
+          fill="#144622" />
+
+    <!-- Clean White Furrow Dividers -->
+    <path d="M 525,670 C 600,670 700,700 820,800" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round" />
+    <path d="M 490,718 C 570,725 660,780 770,880" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round" />
+    <path d="M 445,765 C 500,810 580,890 685,980" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round" />
+
+    <!-- Flowing River (Teal / River Blue) -->
+    <path d="M 420,665 
+             C 470,665 520,670 545,675 
+             C 600,685 640,730 630,780 
+             C 615,835 550,875 495,930 
+             C 455,970 435,1015 450,1050 
+             C 435,1025 425,980 425,910 
+             C 425,835 480,785 485,750 
+             C 490,710 460,685 420,665 Z" 
+          fill="#007B8C" />
+
+    <!-- Left Majestic Golden Wheat Stalk -->
+    <!-- Vertical Wheat Stem -->
+    <path d="M 405,190 
+             L 405,975 
+             C 405,980 395,980 395,975 
+             L 395,190 
+             Z" 
+          fill="#E0980B" stroke="#E0980B" stroke-width="14" stroke-linecap="round" />
+
+    <!-- Terminal Top Wheat Grain -->
+    <path d="M 400,180 
+             C 380,215 375,250 400,285 
+             C 425,250 420,215 400,180 Z" 
+          fill="#E0980B" />
+
+    <!-- Pair 1 -->
+    <path d="M 400,250 C 345,260 325,305 345,340 C 375,340 395,305 400,285 Z" fill="#E0980B" />
+    <path d="M 400,250 C 455,260 475,305 455,340 C 425,340 405,305 400,285 Z" fill="#E0980B" />
+
+    <!-- Pair 2 -->
+    <path d="M 400,315 C 335,330 315,380 335,415 C 370,415 390,375 400,350 Z" fill="#E0980B" />
+    <path d="M 400,315 C 465,330 485,380 465,415 C 430,415 410,375 400,350 Z" fill="#E0980B" />
+
+    <!-- Pair 3 -->
+    <path d="M 400,385 C 325,405 305,455 325,495 C 365,495 385,450 400,420 Z" fill="#E0980B" />
+    <path d="M 400,385 C 475,405 495,455 475,495 C 435,495 415,450 400,420 Z" fill="#E0980B" />
+
+    <!-- Pair 4 -->
+    <path d="M 400,460 C 320,485 300,535 320,580 C 360,580 385,530 400,495 Z" fill="#E0980B" />
+    <path d="M 400,460 C 480,485 500,535 480,580 C 440,580 415,530 400,495 Z" fill="#E0980B" />
+
+    <!-- Pair 5 -->
+    <path d="M 400,540 C 315,570 295,620 315,665 C 360,665 385,615 400,575 Z" fill="#E0980B" />
+    <path d="M 400,540 C 485,570 505,620 485,665 C 440,665 415,615 400,575 Z" fill="#E0980B" />
+
+    <!-- Pair 6 -->
+    <path d="M 400,625 C 315,660 295,710 315,755 C 360,755 385,700 400,660 Z" fill="#E0980B" />
+    <path d="M 400,625 C 485,660 505,710 485,755 C 440,755 415,700 400,660 Z" fill="#E0980B" />
+
+    <!-- Pair 7 -->
+    <path d="M 400,715 C 320,750 305,800 325,845 C 365,845 385,790 400,750 Z" fill="#E0980B" />
+    <path d="M 400,715 C 480,750 495,800 475,845 C 435,845 415,790 400,750 Z" fill="#E0980B" />
+  </g>
+</svg>

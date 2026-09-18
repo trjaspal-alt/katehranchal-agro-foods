@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="s5-sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8DC1D4"/>
+      <stop offset="40%" stop-color="#FCE0A6"/>
+      <stop offset="75%" stop-color="#FFBF66"/>
+      <stop offset="100%" stop-color="#F08E35"/>
+    </linearGradient>
+    <radialGradient id="s5-sun" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="30%" stop-color="#FFF6B8"/>
+      <stop offset="65%" stop-color="#FFAE19"/>
+      <stop offset="100%" stop-color="#FF8A00" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="s5-hills-far" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#688A6E"/>
+      <stop offset="100%" stop-color="#385B40"/>
+    </linearGradient>
+    <linearGradient id="s5-fields-green" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3F7846"/>
+      <stop offset="100%" stop-color="#184523"/>
+    </linearGradient>
+    <linearGradient id="s5-wheat-field" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FADB63"/>
+      <stop offset="60%" stop-color="#DDA327"/>
+      <stop offset="100%" stop-color="#9E6E0F"/>
+    </linearGradient>
+    <linearGradient id="s5-river" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#C8EAF5"/>
+      <stop offset="40%" stop-color="#55B8D6"/>
+      <stop offset="80%" stop-color="#14789E"/>
+      <stop offset="100%" stop-color="#084A63"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Serene Sunrise Sky -->
+  <rect width="1200" height="800" fill="url(#s5-sky)"/>
+
+  <!-- Radiant Golden Sunrise Disc -->
+  <circle cx="600" cy="340" r="180" fill="url(#s5-sun)"/>
+  <circle cx="600" cy="340" r="80" fill="#FFFEE6"/>
+
+  <!-- Distant Rolling Hills -->
+  <path d="M0 420 Q300 360 600 390 Q900 350 1200 410 L1200 500 L0 500 Z" fill="url(#s5-hills-far)" opacity="0.8"/>
+
+  <!-- Agricultural Terraced Crop Fields -->
+  <path d="M0 460 Q400 420 800 450 Q1050 430 1200 470 L1200 620 L0 620 Z" fill="url(#s5-fields-green)"/>
+
+  <!-- Meandering Flowing River (inspired by official logo) -->
+  <path d="M580 430 Q630 480 560 540 Q470 610 520 680 Q560 730 480 800 L320 800 Q410 720 360 660 Q320 600 420 530 Q490 480 460 430 Z" fill="url(#s5-river)"/>
+  <!-- River water shimmers -->
+  <path d="M480 500 Q510 515 470 530" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+  <path d="M420 580 Q450 595 410 615" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity="0.55"/>
+
+  <!-- Undulating Golden Wheat Terraces -->
+  <path d="M0 580 Q350 540 680 590 L640 800 L0 800 Z" fill="url(#s5-wheat-field)"/>
+  <path d="M560 660 Q850 600 1200 630 L1200 800 L500 800 Z" fill="url(#s5-wheat-field)"/>
+
+  <!-- Traditional Rural Village Canopy & Trees (Right Distance) -->
+  <g opacity="0.85">
+    <!-- Canopy roof -->
+    <path d="M880 530 L930 495 L980 530 Z" fill="#8C451D" stroke="#54250B" stroke-width="2"/>
+    <rect x="895" y="530" width="70" height="35" fill="#D9C5A0"/>
+    <!-- Distant sacred Neem / Banyan tree -->
+    <circle cx="820" cy="510" r="38" fill="#1B4F26"/>
+    <circle cx="845" cy="495" r="30" fill="#276935"/>
+    <path d="M830 540 L830 565" stroke="#4A2C13" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <!-- Foreground Silhouetted Wheat Stalks (Atmospheric Framing) -->
+  <path d="M80 800 Q70 650 110 520" stroke="#5C3D08" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+  <ellipse cx="110" cy="540" rx="10" ry="4" fill="#E5A934" transform="rotate(-40 110 540)"/>
+  <ellipse cx="100" cy="560" rx="10" ry="4" fill="#A67314" transform="rotate(35 100 560)"/>
+
+  <path d="M1120 800 Q1140 630 1090 500" stroke="#5C3D08" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+  <ellipse cx="1090" cy="520" rx="10" ry="4" fill="#E5A934" transform="rotate(40 1090 520)"/>
+  <ellipse cx="1105" cy="540" rx="10" ry="4" fill="#A67314" transform="rotate(-35 1105 540)"/>
+</svg>
