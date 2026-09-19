@@ -1,8 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { PageRoute, ProductCategory } from '../types';
 import { BrandLogo } from './BrandLogo';
+import { useCart } from '../context/CartContext';
 import { 
   Search, 
+  ShoppingBag,
   Menu, 
   X, 
   ChevronDown, 
@@ -23,6 +25,7 @@ export const Header: React.FC<HeaderProps> = ({
   onNavigate,
   onOpenSearch,
 }) => {
+  const { itemCount, setIsCartOpen } = useCart();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isShopDropdownOpen, setIsShopDropdownOpen] = useState(false);
@@ -205,6 +208,16 @@ export const Header: React.FC<HeaderProps> = ({
               title="Search products and policies"
             >
               <Search className="w-5 h-5" />
+            </button>
+
+            <button
+              onClick={() => setIsCartOpen(true)}
+              className="relative p-2 sm:p-2.5 text-[#124328] hover:bg-[#124328]/5 rounded-full transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#E0980B]"
+              aria-label={`Order Basket containing ${itemCount} items`}
+              title="Open Order Basket"
+            >
+              <ShoppingBag className="w-5 h-5" />
+              {itemCount > 0 && <span className="absolute -top-0.5 -right-0.5 min-w-[20px] h-[20px] px-1 bg-[#124328] text-[#FBF9F4] text-[11px] font-bold rounded-full flex items-center justify-center border-2 border-[#FBF9F4]">{itemCount}</span>}
             </button>
 
             {/* Mobile Hamburger Toggle */}

@@ -1,6 +1,5 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { CartItem, Product, ProductPackOption, OrderRecord, ShippingAddress, ProductVariation } from '../types';
-import { isProductPurchasable } from '../data/products';
 
 interface CartContextType {
   cart: CartItem[];
@@ -81,14 +80,9 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   const canAddToCart = (product: Product, selectedPack?: ProductPackOption | ProductVariation): boolean => {
     if (!product || product.productStatus !== 'available') return false;
-    // Check variation
-    if (product.variations && product.variations.length > 0) {
-      const matchedVar = selectedPack
-        ? product.variations.find((v) => v.id === selectedPack.id)
-        : product.variations[0];
-      return isProductPurchasable(product, matchedVar);
-    }
-    return false;
+    if (!selectedPack) return false;
+    const price = 'unitPrice' in selectedPack ? selectedPack.unitPrice : selectedPack.price;
+    return typeof price === 'number' && price > 0;
   };
 
   const addToCart = (product: Product, selectedPack: ProductPackOption, quantity = 1): boolean => {

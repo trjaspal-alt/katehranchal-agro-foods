@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useCart } from '../context/CartContext';
-import { X, Trash2, Plus, Minus, ArrowRight, ShieldCheck, ShoppingBag, Info, Tag } from 'lucide-react';
+import { X, Trash2, Plus, Minus, ArrowRight, ShieldCheck, ShoppingBag, Mail } from 'lucide-react';
 import { PageRoute } from '../types';
+import { BUSINESS_INFO } from '../data/businessInfo';
 
-interface CartDrawerProps {
-  onNavigate: (route: PageRoute) => void;
-}
+interface CartDrawerProps { onNavigate: (route: PageRoute) => void; }
 
 export const CartDrawer: React.FC<CartDrawerProps> = ({ onNavigate }) => {
   const {
@@ -19,28 +18,11 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({ onNavigate }) => {
     estimatedShipping,
     discountAmount,
     totalAmount,
-    activeCoupon,
-    couponMessage,
-    applyCoupon,
-    removeCoupon,
   } = useCart();
-
-  const [couponInput, setCouponInput] = useState('');
 
   if (!isCartOpen) return null;
 
-  const handleApplyCoupon = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (couponInput) {
-      applyCoupon(couponInput);
-      setCouponInput('');
-    }
-  };
-
-  const handleCheckoutClick = () => {
-    setIsCartOpen(false);
-    onNavigate('checkout');
-  };
+  const emailOrderLink = `mailto:${BUSINESS_INFO.officialEmail}?subject=${encodeURIComponent('Order assistance request — Katehranchal Agro Foods')}&body=${encodeURIComponent(`Hello Katehranchal Agro Foods,\n\nI need assistance with this guest order basket:\n${cart.map((item) => `• ${item.name} — ${item.packOption.sizeLabel} × ${item.quantity} = ₹${item.unitPrice * item.quantity}`).join('\n')}\n\nEstimated product total: ₹${subtotal}\n\nName:\nMobile number:\nDelivery PIN code:\n\nPlease confirm availability and guide me.\n`)}`;
 
   return (
     <div className="fixed inset-0 z-50 overflow-hidden">
@@ -58,13 +40,13 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({ onNavigate }) => {
             <div className="flex items-center gap-2.5">
               <ShoppingBag className="w-5 h-5 text-[#124328]" />
               <h2 className="font-serif text-lg font-bold text-[#124328]">
-                Shopping Cart ({cart.reduce((s, i) => s + i.quantity, 0)})
+                Guest Order Basket ({cart.reduce((s, i) => s + i.quantity, 0)})
               </h2>
             </div>
             <button
               onClick={() => setIsCartOpen(false)}
               className="p-1.5 rounded-md text-[#132218]/60 hover:text-[#124328] hover:bg-[#124328]/5 transition-colors"
-              aria-label="Close Shopping Cart"
+              aria-label="Close Order Basket"
             >
               <X className="w-5 h-5" />
             </button>
@@ -173,46 +155,6 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({ onNavigate }) => {
           {/* Footer & Order Summary */}
           {cart.length > 0 && (
             <div className="p-4 sm:p-5 border-t border-[#124328]/10 bg-[#FBF9F4] space-y-3.5">
-              {/* Promotional Coupon Placeholder Input */}
-              <div>
-                {activeCoupon ? (
-                  <div className="flex items-center justify-between p-2 rounded bg-[#1C602A]/10 border border-[#1C602A]/30 text-xs text-[#1C602A]">
-                    <div className="flex items-center gap-1.5 font-medium">
-                      <Tag className="w-3.5 h-3.5" />
-                      <span>Code Active: {activeCoupon} (-₹{discountAmount})</span>
-                    </div>
-                    <button
-                      onClick={removeCoupon}
-                      className="text-xs font-bold underline hover:text-red-700"
-                    >
-                      Remove
-                    </button>
-                  </div>
-                ) : (
-                  <form onSubmit={handleApplyCoupon} className="flex gap-2">
-                    <input
-                      type="text"
-                      value={couponInput}
-                      onChange={(e) => setCouponInput(e.target.value)}
-                      placeholder="Coupon voucher code (e.g. WELCOME10)"
-                      className="flex-1 text-xs px-3 py-2 rounded border border-[#124328]/20 bg-white focus:outline-none focus:border-[#E0980B]"
-                    />
-                    <button
-                      type="submit"
-                      className="px-3.5 py-2 text-xs font-semibold rounded bg-[#F5EFEB] text-[#124328] hover:bg-[#EAE4D4] border border-[#124328]/15 transition-colors"
-                    >
-                      Apply
-                    </button>
-                  </form>
-                )}
-                {couponMessage && (
-                  <div className="text-[11px] text-[#132218]/70 mt-1 flex items-center gap-1">
-                    <Info className="w-3 h-3 text-[#E0980B] shrink-0" />
-                    <span>{couponMessage}</span>
-                  </div>
-                )}
-              </div>
-
               {/* Price Breakdown */}
               <div className="space-y-1.5 text-xs text-[#132218]/80 pt-1 border-t border-[#124328]/5">
                 <div className="flex justify-between">
@@ -256,12 +198,18 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({ onNavigate }) => {
               {/* Actions */}
               <div className="space-y-2 pt-1">
                 <button
-                  onClick={handleCheckoutClick}
-                  className="w-full py-3 px-4 rounded bg-[#124328] text-[#FBF9F4] text-xs font-semibold tracking-wider uppercase hover:bg-[#1A5A35] transition-colors flex items-center justify-center gap-2 shadow-sm"
+                  type="button"
+                  disabled
+                  aria-disabled="true"
+                  className="w-full py-3 px-4 rounded bg-[#124328]/25 text-[#124328]/60 text-xs font-semibold tracking-wider uppercase cursor-not-allowed flex items-center justify-center gap-2"
                 >
-                  <span>Proceed to Secure Checkout</span>
+                  <span>Secure Payment Opens Soon</span>
                   <ArrowRight className="w-4 h-4 text-[#E0980B]" />
                 </button>
+                <a href={emailOrderLink} className="w-full py-3 px-4 rounded border border-[#124328]/25 text-[#124328] text-xs font-semibold flex items-center justify-center gap-2 hover:bg-[#FAF7F2] transition-colors">
+                  <Mail className="w-4 h-4 text-[#E0980B]" />
+                  <span>Email Order Assistance</span>
+                </a>
                 <button
                   onClick={() => setIsCartOpen(false)}
                   className="w-full py-2 text-xs font-medium text-[#124328] hover:underline text-center"

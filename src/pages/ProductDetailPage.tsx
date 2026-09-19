@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
-import { Product, PageRoute } from '../types';
+import React, { useEffect, useState } from 'react';
+import { Product, PageRoute, ProductPackOption } from '../types';
+import { useCart } from '../context/CartContext';
 import { CATALOG_PRODUCTS, isProductPurchasable, getMissingCommercialFields } from '../data/products';
 import { ProductCard } from '../components/ProductCard';
 import { CommercialDataAuditModal } from '../components/CommercialDataAuditModal';
@@ -35,6 +36,14 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
   const [pinCode, setPinCode] = useState<string>('');
   const [pinStatus, setPinStatus] = useState<string | null>(null);
   const [isAuditModalOpen, setIsAuditModalOpen] = useState<boolean>(false);
+  const [selectedPack, setSelectedPack] = useState<ProductPackOption>(product.packOptions[0]);
+  const [quantity, setQuantity] = useState(1);
+  const { addToCart } = useCart();
+
+  useEffect(() => {
+    setSelectedPack(product.packOptions[0]);
+    setQuantity(1);
+  }, [product]);
 
   const purchasable = isProductPurchasable(product);
   const missingFields = getMissingCommercialFields(product);
@@ -211,15 +220,29 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
                 </span>
               </div>
 
-              <div>
+              <div className="space-y-3">
+                <div className="grid grid-cols-1 sm:grid-cols-[1fr_auto] gap-3">
+                  <label className="space-y-1.5 text-xs font-semibold text-[#124328]">
+                    <span>Select Pack</span>
+                    <select value={selectedPack.id} onChange={(event) => setSelectedPack(product.packOptions.find((pack) => pack.id === event.target.value) || product.packOptions[0])} className="w-full rounded-lg border border-[#124328]/20 bg-white px-3 py-3 text-sm text-[#132218] focus:outline-none focus:ring-2 focus:ring-[#E0980B]">
+                      {product.packOptions.map((pack) => <option key={pack.id} value={pack.id}>{pack.sizeLabel} — ₹{pack.unitPrice?.toLocaleString('en-IN')}</option>)}
+                    </select>
+                  </label>
+                  <label className="space-y-1.5 text-xs font-semibold text-[#124328]">
+                    <span>Quantity</span>
+                    <select value={quantity} onChange={(event) => setQuantity(Number(event.target.value))} className="w-full sm:w-24 rounded-lg border border-[#124328]/20 bg-white px-3 py-3 text-sm text-[#132218] focus:outline-none focus:ring-2 focus:ring-[#E0980B]">
+                      {[1,2,3,4,5,6,7,8,9,10].map((value) => <option key={value} value={value}>{value}</option>)}
+                    </select>
+                  </label>
+                </div>
                 <button
                   type="button"
-                  disabled={!purchasable}
-                  aria-disabled="true"
-                  className="w-full py-3.5 px-6 rounded-xl font-semibold text-xs transition-all cursor-not-allowed bg-[#124328]/20 text-[#124328]/50 text-center"
+                  onClick={() => addToCart(product, selectedPack, quantity)}
+                  className="w-full py-3.5 px-6 rounded-xl font-semibold text-xs transition-all bg-[#124328] hover:bg-[#1A5A35] text-white text-center"
                 >
-                  Secure Guest Ordering Opens Soon
+                  Add to Guest Order Basket
                 </button>
+                {!purchasable && <p className="text-[11px] text-center text-[#132218]/60">You can prepare a combined basket now. Secure payment will open after the required approvals.</p>}
               </div>
             </div>
 

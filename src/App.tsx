@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
+import { CartProvider } from './context/CartContext';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { SearchModal } from './components/SearchModal';
+import { CartDrawer } from './components/CartDrawer';
 import { HomePage } from './pages/HomePage';
 import { ShopPage } from './pages/ShopPage';
 import { ProductDetailPage } from './pages/ProductDetailPage';
@@ -162,6 +164,7 @@ export default function App() {
   };
 
   return (
+    <CartProvider>
       <div className="min-h-screen flex flex-col bg-[#FBF9F4] text-[#132218] font-sans selection:bg-[#E0980B]/30 selection:text-[#124328]">
         {/* Persistent Site Header */}
         <Header
@@ -256,6 +259,8 @@ export default function App() {
           onNavigate={handleNavigate}
         />
 
+        <CartDrawer onNavigate={handleNavigate} />
+
         {/* Floating Customer-Assistance WhatsApp Trigger */}
         <aside aria-label="Customer Support Channel" className="fixed bottom-[max(1rem,env(safe-area-inset-bottom))] right-4 sm:right-5 z-40">
           <a
@@ -275,5 +280,6 @@ export default function App() {
         {/* Global Footer */}
         <Footer onNavigate={handleNavigate} />
       </div>
+    </CartProvider>
   );
 }
