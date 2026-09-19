@@ -40,7 +40,7 @@ export const WhyChooseUsPage: React.FC<WhyChooseUsPageProps> = ({ onNavigate }) 
       id: 'pillar-security',
       icon: ShieldCheck,
       title: 'Secure Online Shopping',
-      quote: 'A structured cart and secure payment process designed for convenient ordering.',
+      quote: 'A simple guest checkout with secure payment processing for convenient ordering.',
       description:
         'Our digital storefront is architected with strict checkout safeguards. Payment processing will be routed strictly through authorized, PCI-compliant payment gateway partners upon verified integration, ensuring your payment details are handled securely.',
     },

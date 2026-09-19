@@ -6,10 +6,9 @@ import { MessageCircle, Mail, ExternalLink, Instagram, Facebook, Youtube } from 
 
 interface FooterProps {
   onNavigate: (route: PageRoute, category?: ProductCategory) => void;
-  onOpenAccount: () => void;
 }
 
-export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenAccount }) => {
+export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
   const currentYear = new Date().getFullYear();
   const socialLinks = [
     { label: 'Instagram', href: BUSINESS_INFO.socialMedia.instagram, icon: Instagram },
@@ -155,14 +154,6 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenAccount }) => 
                   Frequently Asked Questions
                 </button>
               </li>
-              <li>
-                <button
-                  onClick={onOpenAccount}
-                  className="hover:text-[#E0980B] transition-colors"
-                >
-                  Customer Account
-                </button>
-              </li>
             </ul>
           </div>
 
@@ -253,12 +244,6 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenAccount }) => 
               className="hover:text-[#E0980B] transition-colors"
             >
               Payment & Security Policy
-            </button>
-            <button
-              onClick={() => onNavigate('admin')}
-              className="hover:text-[#E0980B] transition-colors opacity-70 hover:opacity-100"
-            >
-              Store Administration
             </button>
           </div>
 

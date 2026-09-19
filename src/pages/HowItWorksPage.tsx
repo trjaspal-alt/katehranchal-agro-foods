@@ -28,7 +28,7 @@ export const HowItWorksPage: React.FC<HowItWorksPageProps> = ({ onNavigate }) =>
     {
       number: '02',
       title: 'Select Preferred Pack Size & Quantity',
-      description: 'Choose from calibrated packaging options (glass jars, safe heritage tins, or heavy-duty grain bags). Adjust your desired quantity and click Add to Cart or Buy Now.',
+      description: 'Choose your preferred pack size and quantity, then use Buy Now to continue as a guest through the secure hosted payment checkout.',
       icon: Layers,
     },
     {

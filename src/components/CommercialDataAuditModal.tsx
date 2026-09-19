@@ -48,7 +48,7 @@ export const CommercialDataAuditModal: React.FC<CommercialDataAuditModalProps> =
               <span>Cart Eligibility Safeguard Policy</span>
             </div>
             <p>
-              In strict accordance with Step 4 instructions, no fake prices, ₹0 values, or artificial SKUs are published to customers. Add to Cart and Buy Now actions remain completely locked until all 17 required commercial specifications are officially supplied by business management.
+              No fake prices, ₹0 values, or artificial SKUs are published to customers. Secure guest ordering remains locked until the required commercial specifications and payment gateway are officially approved.
             </p>
           </div>
 
@@ -119,7 +119,7 @@ export const CommercialDataAuditModal: React.FC<CommercialDataAuditModalProps> =
               Coming Soon Items Safeguard ({COMING_SOON_ITEMS.length} Planned Products)
             </div>
             <p className="text-xs text-[#132218]/70 leading-relaxed">
-              All 6 upcoming products (Natural Wheat Flour, Cow Dung Cakes, Traditional Wood Ash, Natural Soil, Dry Neem Wood, Dry Mango Wood) are completely isolated from the shopping cart. They offer verified "Notify Me" opt-ins stored safely in browser storage without deceptive counts or buy actions.
+              All 6 upcoming products (Natural Wheat Flour, Cow Dung Cakes, Traditional Wood Ash, Natural Soil, Dry Neem Wood, Dry Mango Wood) are displayed for information only, without notification collection or purchase actions.
             </p>
           </div>
         </div>

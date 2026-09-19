@@ -116,7 +116,7 @@ export const REQUIRED_COMMERCIAL_SPECIFICATIONS: {
 
 /**
  * Evaluates whether a product or product variation has all mandatory commercial specifications
- * confirmed before it is permitted to be purchased through the shopping cart.
+ * confirmed before it is permitted to be purchased through secure guest checkout.
  */
 export function isProductPurchasable(product: Product, variation?: ProductVariation): boolean {
   if (product.productStatus !== 'available') {

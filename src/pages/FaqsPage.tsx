@@ -54,8 +54,8 @@ export const FaqsPage: React.FC<FaqsPageProps> = ({ onNavigate }) => {
       category: 'Ordering & Payments',
       question: 'How will I know that my order is confirmed?',
       answer:
-        'A confirmed order will display an order number and will be followed by an order-confirmation message or email after successful order creation. You can also review order records in your customer dashboard.',
-      actionLink: { label: 'Customer Account', route: 'account' },
+        'After a successful payment, you will receive a payment receipt and order confirmation using the contact details entered during guest checkout. Keep the payment reference for any support request.',
+      actionLink: { label: 'Contact Support', route: 'contact' },
     },
     {
       category: 'Ordering & Payments',

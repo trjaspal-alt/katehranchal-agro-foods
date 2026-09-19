@@ -88,7 +88,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, onSelect }) =
               aria-disabled={!purchasable}
               title={
                 purchasable
-                  ? 'Add to shopping cart'
+                  ? 'Continue to secure guest checkout'
                   : 'Ordering will open after stock, SKU and statutory store details are verified.'
               }
               className="w-full inline-flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-lg text-xs font-semibold border transition-all cursor-not-allowed bg-[#FAF7F2] text-[#132218]/45 border-[#124328]/10"

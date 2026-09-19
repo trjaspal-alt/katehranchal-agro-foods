@@ -1,11 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { PageRoute, ProductCategory } from '../types';
 import { BrandLogo } from './BrandLogo';
-import { useCart } from '../context/CartContext';
 import { 
   Search, 
-  ShoppingBag, 
-  User, 
   Menu, 
   X, 
   ChevronDown, 
@@ -19,16 +16,13 @@ interface HeaderProps {
   currentRoute: PageRoute;
   onNavigate: (route: PageRoute, category?: ProductCategory) => void;
   onOpenSearch: () => void;
-  onOpenAccount: () => void;
 }
 
 export const Header: React.FC<HeaderProps> = ({
   currentRoute,
   onNavigate,
   onOpenSearch,
-  onOpenAccount,
 }) => {
-  const { itemCount, setIsCartOpen } = useCart();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isShopDropdownOpen, setIsShopDropdownOpen] = useState(false);
@@ -201,7 +195,7 @@ export const Header: React.FC<HeaderProps> = ({
             })}
           </nav>
 
-          {/* Utility Actions: Search, Account, Cart, Mobile Toggle */}
+          {/* Utility Actions: Search and Mobile Toggle */}
           <div className="flex items-center gap-1 sm:gap-2">
             {/* Search Trigger */}
             <button
@@ -211,31 +205,6 @@ export const Header: React.FC<HeaderProps> = ({
               title="Search products and policies"
             >
               <Search className="w-5 h-5" />
-            </button>
-
-            {/* Customer Account Trigger */}
-            <button
-              onClick={onOpenAccount}
-              className="p-2 sm:p-2.5 text-[#132218]/80 hover:text-[#124328] hover:bg-[#124328]/5 rounded-full transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#E0980B]"
-              aria-label="Customer Account"
-              title="Customer Account"
-            >
-              <User className="w-5 h-5" />
-            </button>
-
-            {/* Shopping Cart Trigger */}
-            <button
-              onClick={() => setIsCartOpen(true)}
-              className="relative p-2 sm:p-2.5 text-[#124328] hover:bg-[#124328]/5 rounded-full transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#E0980B]"
-              aria-label={`Shopping Cart containing ${itemCount} items`}
-              title="View Shopping Cart"
-            >
-              <ShoppingBag className="w-5 h-5" />
-              {itemCount > 0 && (
-                <span className="absolute -top-0.5 -right-0.5 min-w-[20px] h-[20px] px-1 bg-[#124328] text-[#FBF9F4] text-[11px] font-bold rounded-full flex items-center justify-center border-2 border-[#FBF9F4] shadow-xs">
-                  {itemCount}
-                </span>
-              )}
             </button>
 
             {/* Mobile Hamburger Toggle */}

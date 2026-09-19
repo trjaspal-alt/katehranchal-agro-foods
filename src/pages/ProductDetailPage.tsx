@@ -207,27 +207,18 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
               <div className="p-3.5 rounded-lg bg-amber-50/70 border border-amber-200/80 text-xs text-amber-900 flex items-start gap-2">
                 <AlertCircle className="w-4 h-4 text-amber-700 shrink-0 mt-0.5" />
                 <span>
-                  Ordering will open after stock, SKU, shipping details and required registrations are verified. Add to Cart and Buy Now remain disabled until then.
+                  Secure guest ordering will open after stock, shipping details, required registrations and payment gateway approval are verified.
                 </span>
               </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                <button
-                  type="button"
-                  disabled={!purchasable}
-                  aria-disabled="true"
-                  className="w-full py-3.5 px-6 rounded-xl font-semibold text-xs transition-all cursor-not-allowed bg-[#FAF7F2] text-[#132218]/40 border border-[#124328]/15 text-center"
-                >
-                  Add to Cart (Opens Soon)
-                </button>
-
+              <div>
                 <button
                   type="button"
                   disabled={!purchasable}
                   aria-disabled="true"
                   className="w-full py-3.5 px-6 rounded-xl font-semibold text-xs transition-all cursor-not-allowed bg-[#124328]/20 text-[#124328]/50 text-center"
                 >
-                  Buy Now (Opens Soon)
+                  Secure Guest Ordering Opens Soon
                 </button>
               </div>
             </div>

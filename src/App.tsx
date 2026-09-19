@@ -1,15 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { CartProvider } from './context/CartContext';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { SearchModal } from './components/SearchModal';
-import { CartDrawer } from './components/CartDrawer';
 import { HomePage } from './pages/HomePage';
 import { ShopPage } from './pages/ShopPage';
 import { ProductDetailPage } from './pages/ProductDetailPage';
-import { CheckoutPage } from './pages/CheckoutPage';
-import { OrderConfirmationPage } from './pages/OrderConfirmationPage';
-import { AccountPage } from './pages/AccountPage';
 import { OurStoryPage } from './pages/OurStoryPage';
 import { WhyChooseUsPage } from './pages/WhyChooseUsPage';
 import { HowItWorksPage } from './pages/HowItWorksPage';
@@ -17,9 +12,8 @@ import { ComingSoonPage } from './pages/ComingSoonPage';
 import { FaqsPage } from './pages/FaqsPage';
 import { ContactPage } from './pages/ContactPage';
 import { PoliciesPage } from './pages/PoliciesPage';
-import { AdminPage } from './pages/AdminPage';
 import { NotFoundPage } from './pages/NotFoundPage';
-import { PageRoute, ProductCategory, Product, OrderRecord } from './types';
+import { PageRoute, ProductCategory, Product } from './types';
 import { CATALOG_PRODUCTS } from './data/products';
 import { BUSINESS_INFO } from './data/businessInfo';
 import { MessageCircle } from 'lucide-react';
@@ -29,7 +23,6 @@ export default function App() {
   const [activeCategory, setActiveCategory] = useState<ProductCategory>('all');
   const [selectedProduct, setSelectedProduct] = useState<Product>(CATALOG_PRODUCTS[0]);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
-  const [lastPlacedOrder, setLastPlacedOrder] = useState<OrderRecord | null>(null);
 
   // Auto-scroll to top and update dynamic SEO tags when route or product changes
   useEffect(() => {
@@ -107,14 +100,6 @@ export default function App() {
         metaDescription = 'Connect directly with Katehranchal Agro Foods via verified WhatsApp and official email support.';
         canonicalUrl = 'https://Katehranchal.org/contact';
         break;
-      case 'account':
-        pageTitle = 'Customer Account | Katehranchal Agro Foods';
-        metaDescription = 'Manage your shipping addresses, view past orders, and configure notification preferences.';
-        break;
-      case 'checkout':
-        pageTitle = 'Checkout | Katehranchal Agro Foods';
-        metaDescription = 'Secure checkout with address validation and transparent order calculation.';
-        break;
       case 'policy-shipping':
         pageTitle = 'Shipping & Delivery Policy | Katehranchal Agro Foods';
         break;
@@ -132,9 +117,6 @@ export default function App() {
         break;
       case 'policy-payment':
         pageTitle = 'Payment & Security Policy | Katehranchal Agro Foods';
-        break;
-      case 'admin':
-        pageTitle = 'Store Administration Console | Katehranchal Agro Foods';
         break;
       case 'not-found':
         pageTitle = 'Page Not Found | Katehranchal Agro Foods';
@@ -179,20 +161,13 @@ export default function App() {
     setCurrentRoute('product-detail');
   };
 
-  const handleOrderSuccess = (order: OrderRecord) => {
-    setLastPlacedOrder(order);
-    setCurrentRoute('order-confirmation');
-  };
-
   return (
-    <CartProvider>
       <div className="min-h-screen flex flex-col bg-[#FBF9F4] text-[#132218] font-sans selection:bg-[#E0980B]/30 selection:text-[#124328]">
         {/* Persistent Site Header */}
         <Header
           currentRoute={currentRoute}
           onNavigate={handleNavigate}
           onOpenSearch={() => setIsSearchOpen(true)}
-          onOpenAccount={() => setCurrentRoute('account')}
         />
 
         {/* Dynamic Route View Switching */}
@@ -218,25 +193,6 @@ export default function App() {
               onNavigate={handleNavigate}
               onSelectProduct={handleSelectProduct}
             />
-          )}
-
-          {currentRoute === 'checkout' && (
-            <CheckoutPage
-              onNavigate={handleNavigate}
-              onOrderSuccess={handleOrderSuccess}
-            />
-          )}
-
-          {currentRoute === 'order-confirmation' && (
-            <OrderConfirmationPage
-              order={lastPlacedOrder}
-              onNavigate={handleNavigate}
-              onOpenAccount={() => setCurrentRoute('account')}
-            />
-          )}
-
-          {currentRoute === 'account' && (
-            <AccountPage onNavigate={handleNavigate} />
           )}
 
           {currentRoute === 'our-story' && (
@@ -287,17 +243,10 @@ export default function App() {
             <PoliciesPage initialPolicy="payment" onNavigate={handleNavigate} />
           )}
 
-          {currentRoute === 'admin' && (
-            <AdminPage onNavigate={handleNavigate} />
-          )}
-
           {currentRoute === 'not-found' && (
             <NotFoundPage onNavigate={handleNavigate} />
           )}
         </main>
-
-        {/* Global Cart Slide-Over Drawer */}
-        <CartDrawer onNavigate={handleNavigate} />
 
         {/* Global Keyword Search Modal */}
         <SearchModal
@@ -324,11 +273,7 @@ export default function App() {
         </aside>
 
         {/* Global Footer */}
-        <Footer
-          onNavigate={handleNavigate}
-          onOpenAccount={() => setCurrentRoute('account')}
-        />
+        <Footer onNavigate={handleNavigate} />
       </div>
-    </CartProvider>
   );
 }
